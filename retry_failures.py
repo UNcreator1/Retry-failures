@@ -50,7 +50,7 @@ def create_driver():
         chrome_options.binary_location = chrome_bin
     
     # WebDriver Manager automatically downloads the correct driver for the platform
-    driver_path = ChromeDriverManager(cache_valid_range=7).install()
+    driver_path = ChromeDriverManager().install()
     service = Service(executable_path=driver_path)
     driver = webdriver.Chrome(service=service, options=chrome_options)
     
