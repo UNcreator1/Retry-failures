@@ -12,6 +12,7 @@ import logging
 import subprocess
 import zipfile
 import requests
+import io
 from pathlib import Path
 from datetime import datetime
 
