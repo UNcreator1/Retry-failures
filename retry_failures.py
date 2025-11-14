@@ -5,15 +5,9 @@ Uses fresh browser for each URL to bypass Cloudflare.
 """
 
 import os
-import sys
 import json
 import time
 import logging
-import subprocess
-import zipfile
-import requests
-import io
-from pathlib import Path
 from datetime import datetime
 
 from selenium import webdriver
@@ -23,6 +17,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium_stealth import stealth
+from webdriver_manager.chrome import ChromeDriverManager
 
 # Setup logging
 logging.basicConfig(
@@ -37,91 +32,9 @@ MAX_RETRIES_PER_URL = 3
 BATCH_SIZE = 10
 
 
-def get_chrome_version():
-    """Detect installed Chrome version."""
-    chrome_bin = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-    
-    if not os.path.exists(chrome_bin):
-        chrome_bin = os.environ.get("CHROME_BIN", "")
-    
-    if not chrome_bin or not os.path.exists(chrome_bin):
-        return None
-    
-    try:
-        result = subprocess.run([chrome_bin, "--version"], capture_output=True, text=True)
-        version_string = result.stdout.strip()
-        version = version_string.split()[-1].split('.')[0]
-        return version
-    except Exception as e:
-        logging.warning(f"Could not detect Chrome version: {e}")
-        return None
-
-
-def download_chromedriver_for_version(chrome_version):
-    """Download matching ChromeDriver for Chrome version."""
-    cache_dir = os.path.expanduser("~/.cache/selenium")
-    os.makedirs(cache_dir, exist_ok=True)
-    
-    # Check if already downloaded
-    for root, dirs, files in os.walk(cache_dir):
-        for file in files:
-            if file == "chromedriver" or file == "chromedriver.exe":
-                chromedriver_path = os.path.join(root, file)
-                if os.access(chromedriver_path, os.X_OK):
-                    return chromedriver_path
-    
-    # Download new one
-    try:
-        api_url = "https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json"
-        response = requests.get(api_url, timeout=30)
-        response.raise_for_status()
-        data = response.json()
-        
-        # Find matching version
-        for version_info in reversed(data['versions']):
-            if version_info['version'].startswith(f"{chrome_version}."):
-                downloads = version_info.get('downloads', {}).get('chromedriver', [])
-                
-                # Find macOS version
-                for download in downloads:
-                    if download['platform'] in ['mac-x64', 'mac-arm64']:
-                        url = download['url']
-                        
-                        # Download and extract
-                        zip_response = requests.get(url, timeout=60)
-                        zip_response.raise_for_status()
-                        
-                        zip_file = zipfile.ZipFile(io.BytesIO(zip_response.content))
-                        zip_file.extractall(cache_dir)
-                        
-                        # Find chromedriver
-                        for root, dirs, files in os.walk(cache_dir):
-                            for file in files:
-                                if file == "chromedriver":
-                                    chromedriver_path = os.path.join(root, file)
-                                    os.chmod(chromedriver_path, 0o755)
-                                    return chromedriver_path
-        
-        return None
-    except Exception as e:
-        logging.error(f"Failed to download ChromeDriver: {e}")
-        return None
-
-
 def create_driver():
     """Create a Selenium browser instance with anti-detection."""
-    chrome_bin = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-    
-    if not os.path.exists(chrome_bin):
-        chrome_bin = os.environ.get("CHROME_BIN", "")
-    
-    os.environ["CHROME_BIN"] = chrome_bin
-    chrome_version = get_chrome_version()
-    
-    chromedriver_path = download_chromedriver_for_version(chrome_version)
-    if not chromedriver_path:
-        raise Exception("Failed to download ChromeDriver")
-    
+    chrome_bin = os.environ.get("CHROME_BIN")
     chrome_options = Options()
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--no-sandbox")
@@ -135,7 +48,9 @@ def create_driver():
     if chrome_bin and os.path.exists(chrome_bin):
         chrome_options.binary_location = chrome_bin
     
-    service = Service(executable_path=chromedriver_path)
+    # WebDriver Manager automatically downloads the correct driver for the platform
+    driver_path = ChromeDriverManager(cache_valid_range=7).install()
+    service = Service(executable_path=driver_path)
     driver = webdriver.Chrome(service=service, options=chrome_options)
     
     stealth(driver,
