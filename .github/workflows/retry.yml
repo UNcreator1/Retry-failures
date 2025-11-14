@@ -1,0 +1,75 @@
+name: Retry Failed Extractions
+
+on:
+  workflow_dispatch:  # Manual trigger only
+
+jobs:
+  retry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350  # 5.5 hours max
+    
+    concurrency:
+      group: retry-${{ github.ref }}
+      cancel-in-progress: false
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      
+      - name: Setup Google Chrome
+        id: setup-chrome
+        uses: browser-actions/setup-chrome@latest
+        with:
+          chrome-version: stable
+      
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          echo "Chrome binary: ${{ steps.setup-chrome.outputs.chrome-path }}"
+      
+      - name: Run retry script
+        env:
+          CHROME_BIN: ${{ steps.setup-chrome.outputs.chrome-path }}
+        run: |
+          python retry_failures.py
+      
+      - name: Commit and push results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git add retry_results.json
+          
+          if git diff --staged --quiet; then
+            echo "✅ No changes to commit"
+          else
+            git commit -m "Update retry results - $(date +'%Y-%m-%d %H:%M:%S')"
+            
+            # Push with retry logic
+            for i in {1..5}; do
+              if git push; then
+                echo "✅ Push successful"
+                break
+              else
+                echo "⚠️  Push failed, attempt $i/5"
+                git pull --rebase
+                sleep 5
+              fi
+            done
+          fi
+      
+      - name: Summary
+        if: always()
+        run: |
+          if [ -f "retry_results.json" ]; then
+            RESULTS=$(python -c "import json; f=open('retry_results.json'); d=json.load(f); print(len(d)); f.close()")
+            echo "📊 Total results processed: $RESULTS"
+          else
+            echo "⚠️  No results file found"
+          fi
+

@@ -1,0 +1,4 @@
+selenium==4.8.2
+selenium-stealth==1.0.6
+requests==2.31.0
+
