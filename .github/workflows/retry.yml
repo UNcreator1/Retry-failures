@@ -32,35 +32,61 @@ jobs:
           pip install -r requirements.txt
           echo "Chrome binary: ${{ steps.setup-chrome.outputs.chrome-path }}"
       
-      - name: Run retry script
+      - name: Run retry script with periodic commits
         env:
           CHROME_BIN: ${{ steps.setup-chrome.outputs.chrome-path }}
-        run: |
-          python retry_failures.py
-      
-      - name: Commit and push results
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          git add retry_results.json
+          # Run script in background
+          python retry_failures.py &
+          PID=$!
           
-          if git diff --staged --quiet; then
-            echo "✅ No changes to commit"
-          else
-            git commit -m "Update retry results - $(date +'%Y-%m-%d %H:%M:%S')"
+          # Commit results every 5 minutes while script runs
+          while kill -0 $PID 2>/dev/null; do
+            sleep 300  # 5 minutes
             
-            # Push with retry logic
-            for i in {1..5}; do
-              if git push; then
-                echo "✅ Push successful"
-                break
-              else
-                echo "⚠️  Push failed, attempt $i/5"
-                git pull --rebase
-                sleep 5
+            if [ -f "retry_results.json" ]; then
+              git add retry_results.json
+              if ! git diff --staged --quiet; then
+                git commit -m "Checkpoint retry results - $(date +'%Y-%m-%d %H:%M:%S')" || true
+                git push || (git pull --rebase && git push) || true
+                echo "✅ Checkpoint saved at $(date)"
               fi
-            done
+            fi
+          done
+          
+          # Wait for script to finish
+          wait $PID
+      
+      - name: Final commit and push
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          if [ -f "retry_results.json" ]; then
+            git add retry_results.json
+            
+            if ! git diff --staged --quiet; then
+              git commit -m "Final retry results - $(date +'%Y-%m-%d %H:%M:%S')" || true
+              
+              for i in {1..5}; do
+                if git push; then
+                  echo "✅ Final push successful"
+                  break
+                else
+                  echo "⚠️  Push failed, attempt $i/5"
+                  git pull --rebase
+                  sleep 5
+                fi
+              done
+            else
+              echo "✅ No new changes to commit"
+            fi
+          else
+            echo "⚠️  No results file found"
           fi
       
       - name: Summary
@@ -72,4 +98,5 @@ jobs:
           else
             echo "⚠️  No results file found"
           fi
+
 
