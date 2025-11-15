@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-Retry failed URL extractions using the exact Selenium/Cloudflare
-handling from fmit-crawler/crawler.py.
+Retry failed URL extractions with checkpoint system for resume capability.
 """
 
 import glob
@@ -13,9 +12,8 @@ import re
 import subprocess
 import time
 import zipfile
-from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, Tuple
 
 import requests
 from selenium import webdriver
@@ -34,7 +32,8 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 # Configuration
 FAILED_URLS_FILE = "failed_urls_all_accounts.txt"
 OUTPUT_FILE = "retry_results.json"
-BATCH_SIZE = 10
+CHECKPOINT_FILE = "retry_checkpoint.txt"
+BATCH_SIZE = 5  # Save every 5 URLs
 
 CLOUDFLARE_KEYWORDS = [
     "just a moment",
@@ -65,14 +64,10 @@ def get_chrome_version() -> str:
             timeout=10
         )
         version_output = result.stdout.strip()
-        logging.info(f"Chrome version output: {version_output}")
-        
         match = re.search(r'(\d+\.\d+\.\d+\.\d+)', version_output)
         if match:
             full_version = match.group(1)
-            logging.info(f"Detected full Chrome version: {full_version}")
             major_version = full_version.split('.')[0]
-            logging.info(f"Detected Chrome version: {major_version}")
             return major_version
         return None
     except Exception as e:
@@ -96,8 +91,6 @@ def download_chromedriver_for_version(chrome_version: str) -> str:
         else:
             platform_name = "linux64"
         
-        logging.info(f"Detected platform: {platform_name}")
-        
         versions_url = "https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json"
         response = requests.get(versions_url, timeout=30)
         response.raise_for_status()
@@ -111,7 +104,6 @@ def download_chromedriver_for_version(chrome_version: str) -> str:
                 break
         
         if not target_version:
-            logging.warning(f"No ChromeDriver found for Chrome {chrome_version}, trying latest")
             for version_info in reversed(versions_data["versions"]):
                 version_str = version_info["version"]
                 if version_str.split('.')[0] == chrome_version:
@@ -120,8 +112,6 @@ def download_chromedriver_for_version(chrome_version: str) -> str:
         
         if not target_version:
             raise Exception(f"No ChromeDriver found for Chrome version {chrome_version}")
-        
-        logging.info(f"Found ChromeDriver version: {target_version}")
         
         download_url = None
         for version_info in versions_data["versions"]:
@@ -137,7 +127,6 @@ def download_chromedriver_for_version(chrome_version: str) -> str:
         if not download_url:
             raise Exception(f"No {platform_name} ChromeDriver download found for version {target_version}")
         
-        logging.info(f"Downloading ChromeDriver from {download_url}")
         cache_dir = Path.home() / ".wdm" / "drivers" / "chromedriver" / platform_name / target_version
         cache_dir.mkdir(parents=True, exist_ok=True)
         
@@ -170,7 +159,6 @@ def download_chromedriver_for_version(chrome_version: str) -> str:
         if system != "windows":
             os.chmod(chromedriver_path, 0o755)
         
-        logging.info(f"ChromeDriver installed at: {chromedriver_path}")
         return str(chromedriver_path)
         
     except Exception as e:
@@ -179,8 +167,6 @@ def download_chromedriver_for_version(chrome_version: str) -> str:
 
 
 def create_driver() -> webdriver.Chrome:
-    logging.info("Creating Chrome driver...")
-    
     chrome_bin = os.getenv("CHROME_BIN")
     if not chrome_bin:
         if os.path.exists("/opt/hostedtoolcache/setup-chrome/chromium"):
@@ -196,19 +182,6 @@ def create_driver() -> webdriver.Chrome:
     
     if not os.access(chrome_bin, os.X_OK):
         raise PermissionError(f"Chrome binary is not executable: {chrome_bin}")
-    
-    logging.info(f"Using Chrome binary: {chrome_bin}")
-    
-    try:
-        result = subprocess.run(
-            [chrome_bin, "--version"],
-            capture_output=True,
-            text=True,
-            timeout=10
-        )
-        logging.info(f"Chrome binary version check: {result.stdout.strip()}")
-    except Exception as e:
-        logging.warning(f"Could not verify Chrome binary version: {e}")
     
     chrome_options = Options()
     chrome_options.binary_location = chrome_bin
@@ -229,55 +202,40 @@ def create_driver() -> webdriver.Chrome:
         
         chrome_version = get_chrome_version()
         if chrome_version:
-            logging.info(f"Installing ChromeDriver for Chrome {chrome_version}...")
             chromedriver_path = download_chromedriver_for_version(chrome_version)
         
         if original_chrome_bin:
             os.environ["CHROME_BIN"] = original_chrome_bin
         elif "CHROME_BIN" in os.environ:
             del os.environ["CHROME_BIN"]
-    except Exception as e:
-        logging.warning(f"Failed to get ChromeDriver for specific version: {e}")
-        logging.info("Falling back to webdriver-manager...")
+    except Exception:
+        pass
     
     if not chromedriver_path:
         try:
-            logging.info("Installing ChromeDriver via webdriver-manager...")
             chromedriver_path = ChromeDriverManager().install()
         except Exception as e:
             logging.error(f"Failed to install ChromeDriver: {e}")
             raise
     
     service = Service(chromedriver_path)
-    logging.info("Starting Chrome browser...")
-    logging.info(f"ChromeDriver path: {chromedriver_path}")
-    logging.info(f"Chrome binary path: {chrome_bin}")
+    driver = webdriver.Chrome(service=service, options=chrome_options)
     
-    try:
-        driver = webdriver.Chrome(service=service, options=chrome_options)
-        
-        stealth(driver,
-                languages=["en-US", "en"],
-                vendor="Google Inc.",
-                platform="Linux",
-                webgl_vendor="Intel Inc.",
-                renderer="Intel Iris OpenGL Engine",
-                fix_hairline=True,
-        )
-        
-        logging.info("Chrome driver created successfully with stealth mode enabled")
-        return driver
-    except Exception as e:
-        logging.error(f"Failed to create Chrome driver: {e}")
-        logging.error(f"ChromeDriver path: {chromedriver_path}")
-        logging.error(f"Chrome binary path: {chrome_bin}")
-        raise
+    stealth(driver,
+            languages=["en-US", "en"],
+            vendor="Google Inc.",
+            platform="Linux",
+            webgl_vendor="Intel Inc.",
+            renderer="Intel Iris OpenGL Engine",
+            fix_hairline=True,
+    )
+    
+    return driver
 
 
-def wait_for_cloudflare_clear(driver: webdriver.Chrome, url: str, timeout: int = 45) -> bool:
+def wait_for_cloudflare_clear(driver: webdriver.Chrome, url: str, timeout: int = 30) -> bool:
     """Detect and wait for Cloudflare challenge pages to clear."""
     start_time = time.time()
-    already_refreshed = False
     while time.time() - start_time < timeout:
         try:
             title = (driver.title or "").lower()
@@ -289,97 +247,80 @@ def wait_for_cloudflare_clear(driver: webdriver.Chrome, url: str, timeout: int =
             page_source = ""
         
         if any(keyword in title or keyword in page_source for keyword in CLOUDFLARE_KEYWORDS):
-            logging.warning(f"☁️  Cloudflare challenge detected on {url}. Waiting for clearance...")
-            time.sleep(5)
-            if not already_refreshed:
-                try:
-                    driver.refresh()
-                    already_refreshed = True
-                except Exception:
-                    pass
+            time.sleep(3)
             continue
         return True
-
-    logging.error(f"❌ Cloudflare challenge did not clear for {url} within {timeout}s")
     return False
 
 
-def extract_url_data(driver: webdriver.Chrome, url: str, max_retries: int = 5) -> Tuple[Dict[str, str], webdriver.Chrome]:
-    for attempt in range(max_retries):
-        try:
-            driver.get(url)
-            
-            WebDriverWait(driver, 15).until(
-                EC.presence_of_element_located((By.TAG_NAME, "body"))
-            )
-            
-            if not wait_for_cloudflare_clear(driver, url):
-                raise TimeoutException("Cloudflare challenge did not clear in time")
-            
-            WebDriverWait(driver, 15).until(
-                EC.presence_of_element_located((By.TAG_NAME, "body"))
-            )
-            
-            h1 = h2 = content = ""
-            try:
-                h1_el = WebDriverWait(driver, 20).until(
-                    EC.presence_of_element_located((By.CSS_SELECTOR, "h1.dictionary-detail-title"))
-                )
-                h1 = h1_el.text.strip()
-            except TimeoutException:
-                pass
-            try:
-                h2_el = driver.find_element(By.CSS_SELECTOR, "h2.dictionary-detail-title")
-                h2 = h2_el.text.strip()
-            except NoSuchElementException:
-                pass
-            try:
-                content_el = WebDriverWait(driver, 20).until(
-                    EC.presence_of_element_located((By.CSS_SELECTOR, "div.dictionary-details"))
-                )
-                content = content_el.text.strip()
-            except TimeoutException:
-                pass
-            return {"url": url, "h1": h1, "h2": h2, "content": content}, driver
-        except Exception as e:
-            logging.warning(f"URL error {url} (attempt {attempt + 1}/{max_retries}): {e}. Retry in 10s...")
-            time.sleep(10)
-    return {"url": url, "h1": "", "h2": "", "content": ""}, driver
-
-
-def load_failed_urls() -> List[str]:
-    if not os.path.exists(FAILED_URLS_FILE):
-        logging.error(f"❌ {FAILED_URLS_FILE} not found!")
-        return []
-    with open(FAILED_URLS_FILE, "r", encoding="utf-8") as f:
-        urls = [line.strip() for line in f if line.strip()]
-    logging.info(f"📂 Loaded {len(urls)} failed URLs")
-    return urls
-
-
-def load_existing_results() -> List[str]:
-    if not os.path.exists(OUTPUT_FILE):
-        return []
+def extract_url_data(driver: webdriver.Chrome, url: str) -> Tuple[Dict[str, str], webdriver.Chrome]:
+    """Extract data from URL - single attempt only."""
     try:
-        with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        return [item.get("url", "") for item in data if item.get("url")]
-    except Exception:
-        return []
+        driver.get(url)
+        
+        WebDriverWait(driver, 15).until(
+            EC.presence_of_element_located((By.TAG_NAME, "body"))
+        )
+        
+        if not wait_for_cloudflare_clear(driver, url):
+            return {"url": url, "h1": "", "h2": "", "content": "", "error": "Cloudflare timeout"}, driver
+        
+        h1 = h2 = content = ""
+        try:
+            h1_el = WebDriverWait(driver, 15).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, "h1.dictionary-detail-title"))
+            )
+            h1 = h1_el.text.strip()
+        except TimeoutException:
+            pass
+        try:
+            h2_el = driver.find_element(By.CSS_SELECTOR, "h2.dictionary-detail-title")
+            h2 = h2_el.text.strip()
+        except NoSuchElementException:
+            pass
+        try:
+            content_el = WebDriverWait(driver, 15).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, "div.dictionary-details"))
+            )
+            content = content_el.text.strip()
+        except TimeoutException:
+            pass
+        return {"url": url, "h1": h1, "h2": h2, "content": content}, driver
+    except Exception as e:
+        return {"url": url, "h1": "", "h2": "", "content": "", "error": str(e)}, driver
 
 
-def save_results(results: List[Dict[str, str]]) -> None:
+def load_checkpoint() -> int:
+    """Load last processed index."""
+    if os.path.exists(CHECKPOINT_FILE):
+        try:
+            with open(CHECKPOINT_FILE, 'r') as f:
+                return int(f.read().strip())
+        except:
+            pass
+    return 0
+
+
+def save_checkpoint(index: int):
+    """Save current progress."""
+    with open(CHECKPOINT_FILE, 'w') as f:
+        f.write(str(index))
+
+
+def save_result(result: Dict[str, str]):
+    """Append single result to JSON file."""
     existing = []
     if os.path.exists(OUTPUT_FILE):
         try:
-            with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
+            with open(OUTPUT_FILE, 'r', encoding='utf-8') as f:
                 existing = json.load(f)
-        except Exception:
+        except:
             pass
-    existing.extend(results)
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+    
+    existing.append(result)
+    
+    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(existing, f, ensure_ascii=False, indent=2)
-    logging.info(f"💾 Saved {len(results)} results (total: {len(existing)})")
 
 
 def main():
@@ -387,70 +328,76 @@ def main():
     logging.info("🔄 RETRYING FAILED URL EXTRACTIONS")
     logging.info("=" * 70)
 
-    failed_urls = load_failed_urls()
-    if not failed_urls:
+    # Load all failed URLs
+    if not os.path.exists(FAILED_URLS_FILE):
+        logging.error(f"❌ {FAILED_URLS_FILE} not found!")
         return
+    
+    with open(FAILED_URLS_FILE, "r", encoding="utf-8") as f:
+        all_urls = [line.strip() for line in f if line.strip()]
+    
+    # Load checkpoint
+    start_index = load_checkpoint()
+    
+    logging.info(f"📊 Total failed URLs: {len(all_urls)}")
+    logging.info(f"✅ Already processed: {start_index}")
+    logging.info(f"⏳ Remaining to process: {len(all_urls) - start_index}")
 
-    processed = set(load_existing_results())
-    remaining = [url for url in failed_urls if url not in processed]
-
-    logging.info(f"📊 Total failed URLs: {len(failed_urls)}")
-    logging.info(f"✅ Already processed: {len(processed)}")
-    logging.info(f"⏳ Remaining to process: {len(remaining)}")
-
-    if not remaining:
+    if start_index >= len(all_urls):
         logging.info("✅ All URLs already processed!")
         return
 
-    batch: List[Dict[str, str]] = []
     successful = 0
     still_failed = 0
 
-    for idx, url in enumerate(remaining, 1):
-        logging.info(f"[{idx}/{len(remaining)}] Processing: {url}")
+    # Process from checkpoint
+    for idx in range(start_index, len(all_urls)):
+        url = all_urls[idx]
+        logging.info(f"[{idx + 1}/{len(all_urls)}] Processing: {url}")
+        
         driver = None
         try:
             driver = create_driver()
             data, driver = extract_url_data(driver, url)
+            
             if data.get("h1") or data.get("h2") or data.get("content"):
                 successful += 1
                 logging.info("  ✅ Success!")
             else:
                 still_failed += 1
                 logging.warning("  ❌ Still empty")
-            data["extracted_at"] = datetime.utcnow().isoformat()
-            batch.append(data)
-            if len(batch) >= BATCH_SIZE:
-                save_results(batch)
-                batch = []
+            
+            # Save result immediately
+            save_result(data)
+            
+            # Save checkpoint after each URL
+            save_checkpoint(idx + 1)
+            
         except Exception as exc:
             still_failed += 1
             logging.error(f"  ❌ Error: {exc}")
-            batch.append({
+            save_result({
                 "url": url,
                 "h1": "",
                 "h2": "",
                 "content": "",
-                "error": str(exc),
-                "extracted_at": datetime.utcnow().isoformat(),
+                "error": str(exc)
             })
+            save_checkpoint(idx + 1)
         finally:
             if driver:
                 try:
                     driver.quit()
-                except Exception:
+                except:
                     pass
-            time.sleep(2)
-
-    if batch:
-        save_results(batch)
+            time.sleep(1)  # Shorter delay
 
     logging.info("=" * 70)
     logging.info("📊 RETRY SUMMARY")
     logging.info("=" * 70)
     logging.info(f"✅ Successful: {successful}")
     logging.info(f"❌ Still failed: {still_failed}")
-    logging.info(f"📝 Total processed: {len(remaining)}")
+    logging.info(f"📝 Total processed in this run: {successful + still_failed}")
     logging.info("=" * 70)
 
 

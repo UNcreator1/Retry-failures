@@ -32,7 +32,7 @@ jobs:
           pip install -r requirements.txt
           echo "Chrome binary: ${{ steps.setup-chrome.outputs.chrome-path }}"
       
-      - name: Run retry script with periodic commits
+      - name: Run retry script with auto-checkpoint
         env:
           CHROME_BIN: ${{ steps.setup-chrome.outputs.chrome-path }}
         run: |
@@ -43,17 +43,16 @@ jobs:
           python retry_failures.py &
           PID=$!
           
-          # Commit results every 5 minutes while script runs
+          # Commit checkpoint every 2 minutes while script runs
           while kill -0 $PID 2>/dev/null; do
-            sleep 300  # 5 minutes
+            sleep 120  # 2 minutes
             
-            if [ -f "retry_results.json" ]; then
-              git add retry_results.json
-              if ! git diff --staged --quiet; then
-                git commit -m "Checkpoint retry results - $(date +'%Y-%m-%d %H:%M:%S')" || true
-                git push || (git pull --rebase && git push) || true
-                echo "✅ Checkpoint saved at $(date)"
-              fi
+            git add retry_checkpoint.txt retry_results.json 2>/dev/null || true
+            if ! git diff --staged --quiet 2>/dev/null; then
+              CHECKPOINT=$(cat retry_checkpoint.txt 2>/dev/null || echo "0")
+              git commit -m "Checkpoint: $CHECKPOINT URLs processed" || true
+              git push || (git pull --rebase && git push) || true
+              echo "✅ Checkpoint saved: $CHECKPOINT"
             fi
           done
           
@@ -66,37 +65,45 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          if [ -f "retry_results.json" ]; then
-            git add retry_results.json
+          git add retry_checkpoint.txt retry_results.json 2>/dev/null || true
+          
+          if ! git diff --staged --quiet 2>/dev/null; then
+            CHECKPOINT=$(cat retry_checkpoint.txt 2>/dev/null || echo "0")
+            git commit -m "Final checkpoint: $CHECKPOINT URLs - $(date +'%Y-%m-%d %H:%M:%S')" || true
             
-            if ! git diff --staged --quiet; then
-              git commit -m "Final retry results - $(date +'%Y-%m-%d %H:%M:%S')" || true
-              
-              for i in {1..5}; do
-                if git push; then
-                  echo "✅ Final push successful"
-                  break
-                else
-                  echo "⚠️  Push failed, attempt $i/5"
-                  git pull --rebase
-                  sleep 5
-                fi
-              done
-            else
-              echo "✅ No new changes to commit"
-            fi
+            for i in {1..5}; do
+              if git push; then
+                echo "✅ Final push successful"
+                break
+              else
+                echo "⚠️  Push failed, attempt $i/5"
+                git pull --rebase
+                sleep 5
+              fi
+            done
           else
-            echo "⚠️  No results file found"
+            echo "✅ No new changes to commit"
           fi
       
       - name: Summary
         if: always()
         run: |
+          echo "=" 
+          echo "📊 FINAL SUMMARY"
+          echo "="
+          if [ -f "retry_checkpoint.txt" ]; then
+            CHECKPOINT=$(cat retry_checkpoint.txt)
+            echo "✅ Checkpoint: $CHECKPOINT URLs processed"
+          fi
           if [ -f "retry_results.json" ]; then
             RESULTS=$(python -c "import json; f=open('retry_results.json'); d=json.load(f); print(len(d)); f.close()")
-            echo "📊 Total results processed: $RESULTS"
-          else
-            echo "⚠️  No results file found"
+            echo "📝 Total results saved: $RESULTS"
+          fi
+          TOTAL=$(wc -l < failed_urls_all_accounts.txt | tr -d ' ')
+          echo "📊 Total URLs to process: $TOTAL"
+          if [ -f "retry_checkpoint.txt" ]; then
+            REMAINING=$((TOTAL - CHECKPOINT))
+            echo "⏳ Remaining: $REMAINING"
           fi
 
 
