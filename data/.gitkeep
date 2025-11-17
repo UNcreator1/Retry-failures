@@ -1,0 +1,4 @@
+# This directory stores:
+# - retry_results.json (all extraction results)
+# - retry_checkpoint.json (progress tracking)
+

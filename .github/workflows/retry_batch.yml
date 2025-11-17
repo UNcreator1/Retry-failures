@@ -1,0 +1,137 @@
+name: Retry Failed URLs (Auto-Batch)
+
+on:
+  # Manual trigger
+  workflow_dispatch:
+  
+  # Auto-trigger from previous batch
+  repository_dispatch:
+    types: [next-batch]
+  
+  # Schedule: run every 6 hours (fallback)
+  schedule:
+    - cron: '0 */6 * * *'
+
+env:
+  CHROME_BIN: /opt/hostedtoolcache/setup-chrome/chromium/*/x64/chrome
+
+jobs:
+  retry-batch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330  # 5.5 hours (safety buffer)
+    
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      
+      - name: 🐍 Setup Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+      
+      - name: 📦 Install Dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: 🌐 Setup Chrome (latest)
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: latest
+        id: setup-chrome
+      
+      - name: 🔍 Verify Chrome Installation
+        run: |
+          echo "Chrome path: ${{ steps.setup-chrome.outputs.chrome-path }}"
+          ${{ steps.setup-chrome.outputs.chrome-path }} --version
+          export CHROME_BIN="${{ steps.setup-chrome.outputs.chrome-path }}"
+          echo "CHROME_BIN=$CHROME_BIN" >> $GITHUB_ENV
+      
+      - name: 📊 Check Status
+        id: status
+        run: |
+          if [ -f data/retry_checkpoint.json ]; then
+            echo "Checkpoint exists"
+            cat data/retry_checkpoint.json
+            LAST_INDEX=$(python3 -c "import json; print(json.load(open('data/retry_checkpoint.json'))['last_index'])")
+            echo "last_index=$LAST_INDEX" >> $GITHUB_OUTPUT
+          else
+            echo "No checkpoint found, starting fresh"
+            echo "last_index=0" >> $GITHUB_OUTPUT
+          fi
+          
+          TOTAL_URLS=$(wc -l < failed_urls_all_accounts.txt | xargs)
+          echo "total_urls=$TOTAL_URLS" >> $GITHUB_OUTPUT
+          echo "Total URLs: $TOTAL_URLS"
+      
+      - name: 🚀 Run Batch Processing
+        id: process
+        run: |
+          python retry_failures_batch.py
+          
+          # Check if more URLs remain
+          if [ -f data/retry_checkpoint.json ]; then
+            LAST_INDEX=$(python3 -c "import json; print(json.load(open('data/retry_checkpoint.json'))['last_index'])")
+            TOTAL_URLS=$(wc -l < failed_urls_all_accounts.txt | xargs)
+            echo "Processed up to index: $LAST_INDEX of $TOTAL_URLS"
+            
+            if [ "$LAST_INDEX" -lt "$TOTAL_URLS" ]; then
+              echo "more_batches=true" >> $GITHUB_OUTPUT
+              echo "✅ More batches remaining"
+            else
+              echo "more_batches=false" >> $GITHUB_OUTPUT
+              echo "🎉 All batches complete!"
+            fi
+          else
+            echo "more_batches=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: 📊 Display Results Summary
+        run: |
+          echo "=== RESULTS SUMMARY ==="
+          if [ -f data/retry_results.json ]; then
+            RESULT_COUNT=$(python3 -c "import json; print(len(json.load(open('data/retry_results.json'))))")
+            echo "Total results collected: $RESULT_COUNT"
+            
+            SUCCESS_COUNT=$(python3 -c "import json; data=json.load(open('data/retry_results.json')); print(sum(1 for d in data if d.get('h1') or d.get('h2') or d.get('content')))")
+            echo "Successful extractions: $SUCCESS_COUNT"
+            
+            FAIL_COUNT=$(python3 -c "import json; data=json.load(open('data/retry_results.json')); print(sum(1 for d in data if not (d.get('h1') or d.get('h2') or d.get('content'))))")
+            echo "Failed extractions: $FAIL_COUNT"
+          else
+            echo "No results file found"
+          fi
+      
+      - name: 💾 Commit and Push Results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git add data/retry_results.json data/retry_checkpoint.json || true
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            BATCH_NUM=$(python3 -c "import json; print(json.load(open('data/retry_checkpoint.json'))['last_index'] // 100 + 1)" 2>/dev/null || echo "1")
+            git commit -m "🔄 Batch ${BATCH_NUM} results - Auto-commit from workflow"
+            git push
+            echo "✅ Results pushed to repository"
+          fi
+      
+      - name: 🔄 Trigger Next Batch
+        if: steps.process.outputs.more_batches == 'true'
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          event-type: next-batch
+          client-payload: '{"triggered_by": "batch_completion"}'
+      
+      - name: 📧 Notify Completion
+        if: steps.process.outputs.more_batches == 'false'
+        run: |
+          echo "🎉 All batches completed successfully!"
+          echo "Check data/retry_results.json for final results"
+
