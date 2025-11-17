@@ -123,8 +123,18 @@ jobs:
           else
             BATCH_NUM=$(python3 -c "import json; print(json.load(open('data/retry_checkpoint.json'))['last_index'] // 100 + 1)" 2>/dev/null || echo "1")
             git commit -m "🔄 Batch ${BATCH_NUM} results - Auto-commit from workflow"
-            git push
-            echo "✅ Results pushed to repository"
+            
+            # Try to push with retries and pull if needed
+            for i in {1..5}; do
+              if git push; then
+                echo "✅ Results pushed to repository"
+                break
+              else
+                echo "⚠️  Push failed (attempt $i/5), pulling and retrying..."
+                git pull --rebase origin main
+                sleep 2
+              fi
+            done
           fi
       
       - name: 🔄 Trigger Next Batch
