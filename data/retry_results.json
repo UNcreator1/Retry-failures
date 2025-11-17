@@ -5998,5 +5998,605 @@
     "h1": "",
     "h2": "",
     "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-dang-ky-van-hanh-theo-linh-vuc-chuc-nang-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-do-cau-truc-chi-huy-su-co-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-do-cay-muc-tieu-chien-luoc-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-do-dong-chay-truyen-thong-chien-luoc-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-do-dong-toi-uu-hoa-dich-vu-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-do-hoa-quy-trinh-tu-dong-hoa-la-gi",
+    "h1": "Automation Process Mapping là gì",
+    "h2": "Sơ đồ hóa quy trình tự động hóa là gì",
+    "content": "1. Định nghĩa:\nSơ đồ hóa quy trình tự động hóa (Automation Process Mapping) là phương pháp trực quan hóa các bước, luồng công việc và điểm tương tác trong một quy trình để xác định những phần có thể hoặc nên được tự động hóa, giúp triển khai hiệu quả và giảm thiểu sai sót.\n→ Ví dụ: Sử dụng công cụ như Microsoft Visio hoặc Lucidchart để vẽ sơ đồ quy trình xử lý yêu cầu khách hàng và xác định bước tự động hóa bằng RPA.\n2. Mục đích sử dụng:\n→ Xác định rõ các bước trong quy trình trước khi tự động hóa.\n→ Phát hiện điểm nghẽn, lãng phí và cơ hội tối ưu hóa.\n→ Tạo tài liệu tham khảo cho nhóm kỹ thuật và vận hành.\n3. Các bước áp dụng và ví dụ thực tiễn:\nBối cảnh: Một công ty bảo hiểm muốn tự động hóa quy trình giải quyết bồi thường.\n→ Bước 1: Thu thập thông tin chi tiết về quy trình hiện tại.\n→ Bước 2: Vẽ sơ đồ quy trình từ đầu đến cuối, bao gồm cả các bước thủ công.\n→ Bước 3: Xác định điểm có thể tự động hóa (ví dụ: nhập dữ liệu, kiểm tra tính hợp lệ).\n→ Bước 4: Đánh giá chi phí – lợi ích cho từng phần được tự động hóa.\n→ Bước 5: Chuyển giao sơ đồ và yêu cầu cho nhóm triển khai.\n4. Lưu ý thực tiễn:\n→ Luôn tham khảo ý kiến của nhân viên vận hành thực tế.\n→ Ghi rõ các điều kiện, ngoại lệ và luồng rẽ nhánh.\n→ Cập nhật sơ đồ khi quy trình thay đổi.\n5. Ví dụ minh họa:\n→ Cơ bản: Sơ đồ hóa quy trình phê duyệt đơn nghỉ phép để xác định các bước gửi thông báo tự động.\n→ Nâng cao: Sơ đồ hóa quy trình sản xuất tích hợp IoT, AI và RPA để tối ưu toàn bộ dây chuyền.\n6. Case Study Mini:\n→ Tình huống: Một ngân hàng triển khai RPA xử lý giao dịch nhưng không vẽ sơ đồ quy trình rõ ràng.\n→ Giải pháp: Thực hiện sơ đồ hóa chi tiết để tránh trùng lặp và bỏ sót bước.\n→ Kết quả: Giảm 30% lỗi triển khai và rút ngắn thời gian dự án 20%.\n7. Câu hỏi kiểm tra nhanh (Quick Quiz):\nSơ đồ hóa quy trình tự động hóa giúp ích như thế nào?\n→ a. Hiểu rõ quy trình và xác định cơ hội tự động hóa ←\n→ b. Làm quy trình phức tạp hơn\n→ c. Bỏ qua các bước không cần thiết\n→ d. Ngăn cản cải tiến quy trình\n8. Câu hỏi tình huống (Scenario-Based Question):\nBạn được giao triển khai tự động hóa quy trình xử lý đơn hàng. Bạn sẽ thực hiện sơ đồ hóa quy trình như thế nào để đảm bảo triển khai hiệu quả?\n9. Vì sao bạn nên quan tâm đến khái niệm này:\n→ Là bước nền tảng để tự động hóa thành công.\n→ Giúp tránh lãng phí thời gian và chi phí.\n→ Tạo sự đồng thuận giữa các bên liên quan.\n10. Ứng dụng thực tế trong công việc:\n→ IT: thiết kế sơ đồ cho dự án RPA.\n→ Sản xuất: sơ đồ hóa quy trình dây chuyền sản xuất.\n→ Dịch vụ: sơ đồ hóa quy trình chăm sóc khách hàng.\n11. Sai lầm phổ biến khi triển khai:\n→ Bỏ qua các ngoại lệ trong quy trình.\n→ Không cập nhật khi quy trình thay đổi.\n→ Sơ đồ quá phức tạp khiến khó áp dụng.\n12. Đối tượng áp dụng:\n→ Dành cho: Business Analyst, Quản lý dự án, CIO, Trưởng phòng vận hành.\n→ Áp dụng trong: mọi ngành triển khai tự động hóa.\n13. Giới thiệu đơn giản dễ hiểu:\nSơ đồ hóa quy trình tự động hóa giống như “bản đồ đường đi” – nếu không có, bạn sẽ dễ lạc hướng và tốn nhiều nguồn lực.\n14. Câu hỏi thường gặp:\nQ1 → Có công cụ nào giúp sơ đồ hóa hiệu quả không?\n→ Có, như Lucidchart, Microsoft Visio, Bizagi.\nQ2 → Cần độ chi tiết bao nhiêu khi sơ đồ hóa?\n→ Đủ để người kỹ thuật và vận hành hiểu rõ từng bước.\nQ3 → Sơ đồ hóa có thay thế tài liệu quy trình không?\n→ Không, nó là phần bổ sung trực quan.\nQ4 → Bao lâu nên cập nhật sơ đồ quy trình?\n→ Mỗi khi có thay đổi đáng kể trong quy trình.\nQ5 → Sơ đồ hóa có cần chuyên gia không?\n→ Không bắt buộc, nhưng chuyên gia giúp tối ưu hóa kết quả.\n15. Gợi ý hỗ trợ:\n→ Gửi email: info@fmit.vn\n→ Nhắn tin Zalo: 0708 25 99 25\n© Bản quyền thuộc về Viện FMIT – Từ điển quản trị chuẩn mực quốc tế"
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-do-leo-thang-thong-bao-khan-cap-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-do-lien-ket-kpi-va-kiem-soat-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-do-linh-hoat-la-gi",
+    "h1": "Flexible diagrams là gì",
+    "h2": "Sơ đồ linh hoạt là gì",
+    "content": "1. Định nghĩa:\nSơ đồ linh hoạt (Flexible diagrams) là các loại sơ đồ được thiết kế và sử dụng theo cách dễ dàng chỉnh sửa, mở rộng hoặc tái cấu trúc để phản ánh sự thay đổi liên tục của yêu cầu, quy trình hoặc kiến trúc hệ thống.\n→ Ví dụ: Một nhóm Agile dùng sơ đồ kiến trúc hệ thống trên Miro, có thể thay đổi nhanh khi yêu cầu khách hàng thay đổi.\n2. Mục đích sử dụng:\n→ Giúp mô hình hóa thông tin mà vẫn thích ứng với thay đổi\n→ Giảm chi phí cập nhật tài liệu khi dự án thay đổi thường xuyên\n→ Hỗ trợ giao tiếp giữa các bên liên quan trong môi trường Agile/Lean\n3. Các bước áp dụng và ví dụ thực tiễn:\nBối cảnh: Một công ty fintech triển khai hệ thống thanh toán và cần thay đổi kiến trúc nhiều lần.\n→ Bước 1: Chọn công cụ tạo sơ đồ linh hoạt (Miro, Lucidchart, draw.io).\n→ Bước 2: Vẽ sơ đồ ban đầu với mức chi tiết vừa đủ.\n→ Bước 3: Cho phép nhóm cùng chỉnh sửa và cập nhật theo nhu cầu.\n→ Bước 4: Lưu trữ phiên bản và cập nhật liên tục khi có thay đổi.\n→ Bước 5: Sử dụng sơ đồ để hỗ trợ họp, workshop và đào tạo.\n4. Lưu ý thực tiễn:\n→ Không cần sơ đồ quá chi tiết, tập trung vào khả năng điều chỉnh.\n→ Nên kết hợp với collaborative modeling để tăng hiệu quả.\n→ Cần cơ chế quản lý phiên bản để tránh nhầm lẫn.\n5. Ví dụ minh họa:\n→ Cơ bản: Một nhóm startup vẽ user journey bằng sticky notes, dễ thay đổi vị trí khi cần.\n→ Nâng cao: Amazon sử dụng flexible diagrams để thiết kế kiến trúc cloud-native thay đổi liên tục.\n6. Case Study Mini:\n→ Tình huống: Một ngân hàng thay đổi liên tục quy trình eKYC do yêu cầu pháp lý.\n→ Giải pháp: Dùng flexible diagrams trên công cụ trực tuyến để cập nhật kịp thời.\n→ Kết quả: Giảm 40% thời gian cập nhật tài liệu và tăng độ chính xác.\n7. Câu hỏi kiểm tra nhanh (Quick Quiz):\nFlexible diagrams giúp tổ chức đạt điều gì?\n→ a. Dễ dàng thích ứng với thay đổi và giảm chi phí cập nhật ←\n→ b. Làm tài liệu phức tạp và cứng nhắc hơn\n→ c. Giảm khả năng hợp tác của nhóm\n→ d. Miễn trừ trách nhiệm cập nhật tài liệu\n8. Câu hỏi tình huống (Scenario-Based Question):\nMột công ty thương mại điện tử muốn tối ưu hóa quy trình giao hàng nhưng thay đổi liên tục. Nếu áp dụng flexible diagrams, họ nên làm gì (ví dụ: dùng sơ đồ online, cho phép nhóm cùng chỉnh sửa, cập nhật phiên bản thường xuyên)?\n9. Vì sao bạn nên quan tâm đến khái niệm này:\n→ Sơ đồ linh hoạt phù hợp với môi trường Agile, nơi thay đổi là tất yếu.\n→ Giúp tiết kiệm chi phí và thời gian cập nhật tài liệu.\n→ Tăng sự minh bạch và hợp tác giữa các bên liên quan.\n10. Ứng dụng thực tế trong công việc:\n→ Agile: vẽ và cập nhật backlog refinement workflow.\n→ UX: mô hình hóa customer journey dễ chỉnh sửa.\n→ IT: thiết kế kiến trúc hệ thống cloud-native.\n→ Quản trị: sơ đồ tổ chức hoặc quy trình nghiệp vụ linh hoạt.\n11. Sai lầm phổ biến khi triển khai:\n→ Quá chú trọng chi tiết khiến sơ đồ khó điều chỉnh.\n→ Thiếu cơ chế version control, dễ gây nhầm lẫn.\n→ Không phân quyền chỉnh sửa, dẫn đến thay đổi ngoài kiểm soát.\n12. Đối tượng áp dụng:\n→ Business Analyst, UX Designer, Developer, Product Owner.\n→ Áp dụng trong: công nghệ, thương mại điện tử, tài chính, sản xuất.\n13. Giới thiệu đơn giản dễ hiểu:\nFlexible diagrams giống như “bản đồ Google Maps” – có thể zoom in, zoom out và thay đổi lộ trình theo thời gian thực.\n14. Câu hỏi thường gặp (FAQ):\nQ1 → Flexible diagrams khác static diagrams thế nào?\n→ Static cố định, flexible dễ chỉnh sửa và cộng tác.\nQ2 → Công cụ nào phổ biến?\n→ Miro, Lucidchart, MURAL, draw.io.\nQ3 → Có áp dụng offline được không?\n→ Có, nhưng online linh hoạt và tiện lợi hơn.\nQ4 → Có áp dụng cho doanh nghiệp nhỏ không?\n→ Có, giúp tiết kiệm chi phí quản lý tài liệu.\nQ5 → Có cần version control không?\n→ Có, để theo dõi lịch sử chỉnh sửa.\n15. Gợi ý hỗ trợ:\n→ Gửi email: info@fmit.vn\n→ Nhắn tin Zalo: 0708 25 99 25\n© Bản quyền thuộc về Viện FMIT – Từ điển quản trị chuẩn mực quốc tế"
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-do-tac-dong-tuong-quan-rui-ro-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-do-thac-gia-tri-chien-luoc-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-do-tuong-tac-rui-ro-doanh-nghiep-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-ghi-chep-su-co-van-hanh-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-huu-rui-ro-dinh-huong-su-menh-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-luong-su-co-phat-hien-duoc-la-gi",
+    "h1": "Number of Incidents Detected là gì",
+    "h2": "Số lượng sự cố phát hiện được là gì",
+    "content": "1. Định nghĩa:\nNumber of Incidents Detected là KPI đo lường tổng số sự cố, vi phạm hoặc vấn đề được phát hiện trong một khoảng thời gian cụ thể, phản ánh khả năng giám sát, kiểm soát rủi ro và bảo mật của tổ chức.\n→ Ví dụ: Trong tháng, bộ phận kiểm soát phát hiện 25 sự cố bảo mật → Number of Incidents Detected = 25.\n2. Mục đích sử dụng:\n→ Đánh giá hiệu quả hệ thống giám sát và kiểm soát\n→ Phát hiện kịp thời các rủi ro, vi phạm hoặc sự cố\n→ Hỗ trợ lập kế hoạch xử lý, phòng ngừa và cải tiến quy trình\n3. Các bước áp dụng và ví dụ thực tiễn:\n→ Bước 1: Xác định loại sự cố cần theo dõi (bảo mật, vận hành, tuân thủ)\n→ Bước 2: Thu thập dữ liệu phát hiện từ hệ thống giám sát hoặc kiểm tra định kỳ\n→ Bước 3: Tính tổng số sự cố phát hiện trong kỳ\n→ Bước 4: Phân tích nguyên nhân, loại sự cố và lập biện pháp cải tiến\n→ Ví dụ: 10 sự cố vận hành, 5 sự cố bảo mật, 10 vi phạm tuân thủ → tổng số = 25 sự cố\n4. Lưu ý thực tiễn:\n→ Số lượng phát hiện cao không luôn xấu; có thể phản ánh hệ thống giám sát hiệu quả\n→ Số lượng phát hiện thấp → cần đánh giá khả năng giám sát và kiểm soát\n→ Kết hợp với KPI khác như Compliance Rate, Audit Findings Closed on Time để đánh giá toàn diện\n5. Ví dụ minh họa:\n→ Cơ bản: 20–50 sự cố phát hiện mỗi tháng trong doanh nghiệp lớn\n→ Nâng cao: Phân loại theo loại sự cố, phòng ban hoặc dự án để cải tiến hiệu quả kiểm soát\n6. Case Study Mini:\n→ Tình huống: Số lượng sự cố phát hiện thấp nhưng xảy ra nhiều rủi ro ngoài dự đoán\n→ Giải pháp: Tăng cường hệ thống giám sát, audit định kỳ, đào tạo nhân sự\n→ Kết quả: Số sự cố phát hiện tăng từ 10 lên 30, cải thiện quản lý rủi ro và giảm thiệt hại\n7. Câu hỏi kiểm tra nhanh (Quick Quiz):\nNumber of Incidents Detected đo lường gì?\n→ a. Tổng số sự cố được phát hiện ←\n→ b. Chi phí xử lý sự cố\n→ c. Số nhân viên phát hiện sự cố\n→ d. Số lượng quy trình tuân thủ\n8. Câu hỏi tình huống (Scenario-Based Question):\nNếu số lượng sự cố phát hiện quá thấp, bạn sẽ làm gì để đảm bảo hệ thống giám sát và kiểm soát rủi ro hiệu quả hơn?\n9. Vì sao bạn nên quan tâm đến khái niệm này:\n→ Giúp phát hiện và giảm thiểu rủi ro kịp thời\n→ Hỗ trợ quản lý vận hành, bảo mật và tuân thủ\n→ Tăng khả năng kiểm soát và ra quyết định đúng đắn\n10. Ứng dụng thực tế trong công việc:\n→ Risk Manager/Compliance Officer: theo dõi và báo cáo số sự cố\n→ IT/Security Manager: giám sát và xử lý sự cố bảo mật\n→ CEO/Quản lý cấp cao: đánh giá hiệu quả hệ thống giám sát và kiểm soát\n11. Sai lầm phổ biến khi triển khai:\n→ Chỉ tập trung vào số lượng mà bỏ qua loại và mức độ nghiêm trọng\n→ Không phân tích nguyên nhân và biện pháp khắc phục\n→ KPI không liên kết với cải tiến quy trình và quản lý rủi ro\n12. Đối tượng áp dụng:\n→ Risk Manager, Compliance Officer, IT/Security Manager, CEO\n→ Tổ chức muốn theo dõi và cải thiện hiệu quả giám sát, kiểm soát rủi ro\n13. Giới thiệu đơn giản dễ hiểu:\nNumber of Incidents Detected giống như “thước đo sự cố” – biết tổng số vấn đề phát hiện để phòng ngừa và xử lý kịp thời.\n14. Câu hỏi thường gặp (FAQ):\nQ1 → Số lượng phát hiện cao có xấu không?\n→ Không, có thể phản ánh hệ thống giám sát hiệu quả\nQ2 → Bao lâu nên theo dõi KPI này?\n→ Hàng tuần, hàng tháng hoặc theo dự án\nQ3 → Ai chịu trách nhiệm KPI này?\n→ Risk Manager, Compliance Officer, IT/Security Manager, CEO\nQ4 → Công cụ hỗ trợ theo dõi KPI?\n→ GRC software, ERP, Power BI, Security Monitoring Tools\nQ5 → Nếu số lượng quá thấp → giải pháp là gì?\n→ Tăng cường giám sát, audit, đào tạo nhân sự và cải tiến quy trình\n15. Gợi ý hỗ trợ:\n→ Gửi email: info@fmit.vn\n→ Nhắn tin Zalo: 0708 25 99 25\n© Bản quyền thuộc về Viện FMIT – Từ điển quản trị chuẩn mực quốc tế"
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-luong-vu-viec-duoc-nang-cap-la-gi",
+    "h1": "Escalated Case Volume là gì",
+    "h2": "Số lượng vụ việc được nâng cấp là gì",
+    "content": "Định nghĩa:\nEscalated Case Volume là tổng số lượng các yêu cầu hỗ trợ hoặc sự cố của khách hàng đã được nâng cấp lên cấp độ cao hơn trong một khoảng thời gian nhất định. Chỉ số này phản ánh mức độ phức tạp hoặc nghiêm trọng của các vấn đề mà bộ phận hỗ trợ phải xử lý vượt quá khả năng giải quyết ban đầu.\n→ Ví dụ: Trong tháng, tổng số vụ việc được chuyển từ hỗ trợ cấp 1 lên cấp 2 là 120 vụ.\nMục đích sử dụng:\n→ Đánh giá mức độ khó khăn và tải công việc của các cấp hỗ trợ cao hơn.\n→ Phân tích nguyên nhân và xu hướng phát sinh các vụ việc phức tạp.\n→ Cải thiện đào tạo và quy trình xử lý để giảm số vụ việc cần escalated.\n→ Dự báo nguồn lực cần thiết cho đội ngũ hỗ trợ chuyên sâu.\nCác bước áp dụng thực tế:\n→ Xác định tiêu chí và quy trình nâng cấp vụ việc (escalation policy).\n→ Ghi nhận và tổng hợp số lượng vụ việc được nâng cấp theo ngày/tuần/tháng.\n→ Phân tích theo loại yêu cầu, khách hàng, thời gian để xác định nguyên nhân tăng giảm.\n→ Lập báo cáo theo dõi chỉ số và chia sẻ với các bộ phận liên quan.\n→ Đề xuất cải tiến quy trình hoặc đào tạo để giảm tần suất escalated cases.\nLưu ý thực tiễn:\n→ Số lượng escalated case tăng không phải lúc nào cũng tiêu cực – có thể do chính sách nâng cấp chặt chẽ hơn để bảo vệ khách hàng.\n→ Cần cân bằng giữa xử lý nhanh ở cấp đầu và chuyển vụ việc lên cấp cao để không làm chậm trễ.\n→ Chỉ số nên được xem xét kết hợp với thời gian xử lý và mức độ hài lòng khách hàng.\nVí dụ minh họa:\n→ Cơ bản: Một trung tâm hỗ trợ có 50 vụ việc nâng cấp mỗi tuần trong tổng số 500 yêu cầu.\n→ Nâng cao: Sau khi cải tiến quy trình đào tạo cấp 1, số vụ việc escalated giảm 30% trong vòng 2 tháng.\nCase Study Mini:\n→ Tình huống: Số vụ việc được nâng cấp tăng đột biến trong tháng do thiếu chuyên môn xử lý.\n→ Giải pháp: Tổ chức đào tạo chuyên sâu cho đội ngũ frontline và thiết lập tài liệu hướng dẫn chi tiết.\n→ Kết quả: Escalated Case Volume giảm 40%, thời gian phản hồi nhanh hơn, khách hàng hài lòng hơn.\nCâu hỏi kiểm tra nhanh (Quick Quiz):\nEscalated Case Volume phản ánh điều gì?\na. Tổng số khách hàng mới trong tháng.\nb. Số lượng vụ việc hỗ trợ được chuyển lên cấp độ xử lý cao hơn.\nc. Thời gian trung bình để xử lý một yêu cầu.\nd. Số lượng hợp đồng được ký kết.\n→ Đáp án đúng: b\nCâu hỏi tình huống (Scenario-Based Question):\nBạn nhận thấy Escalated Case Volume tăng gấp đôi trong 1 tháng nhưng không tăng nhân sự. Bạn sẽ phân tích và xử lý tình huống này như thế nào?\nLiên kết thuật ngữ liên quan:\n→ Escalation Handling Time: Thời gian xử lý các vụ việc sau khi được nâng cấp.\n→ Support SLA Compliance: Tỷ lệ tuân thủ cam kết xử lý vụ việc.\n→ First Contact Resolution (FCR): Tỷ lệ xử lý vụ việc ngay lần tiếp xúc đầu – giảm escalated case volume.\n→ Knowledge Base Usage: Tăng sử dụng giúp giảm nhu cầu escalated.\nGợi ý hỗ trợ:\n→ Gửi email: info@fmit.vn\n→ Nhắn tin qua Zalo: 0708 25 99 25"
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-nhat-ky-cap-nhat-du-bao-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-nhat-ky-cap-nhat-kich-ban-du-bao-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-nhat-ky-trien-khai-y-tuong-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-nhat-ky-truyen-thong-su-co-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-sanh-cam-ket-khach-hang-va-ke-hoach-nhu-cau-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-sanh-cam-nhan-nhu-cau-va-du-bao-nhu-cau-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-sanh-chuan-muc-thuc-hanh-grc-la-gi",
+    "h1": "Benchmarking GRC Practices là gì",
+    "h2": "So sánh chuẩn mực thực hành GRC là gì",
+    "content": "1. Định nghĩa:\nBenchmarking GRC Practices là quá trình so sánh và đối chiếu các hoạt động Quản trị – Rủi ro – Tuân thủ (Governance, Risk, Compliance) của một tổ chức với các chuẩn mực, đối thủ cạnh tranh hoặc các công ty dẫn đầu trong ngành để tìm ra khoảng cách và cơ hội cải thiện.\n2. Mục đích sử dụng:\n→ Đánh giá khách quan hiệu quả triển khai GRC.\n→ Xác định khoảng trống (gaps) giữa thực tế và thông lệ tốt nhất.\n→ Xây dựng lộ trình nâng cao năng lực quản trị rủi ro và tuân thủ.\n3. Các bước áp dụng và ví dụ thực tiễn:\nBối cảnh: Một công ty bảo hiểm muốn nâng cao hệ thống tuân thủ theo chuẩn quốc tế.\n→ Bước 1: Xác định mục tiêu benchmarking (so với đối thủ hay chuẩn mực quốc tế).\n→ Bước 2: Chọn bộ chỉ số tham chiếu (ví dụ: ISO 31000, COSO, Basel III).\n→ Bước 3: Thu thập dữ liệu nội bộ và dữ liệu thị trường.\n→ Bước 4: Phân tích chênh lệch và nguyên nhân.\n→ Bước 5: Đề xuất chiến lược cải thiện và theo dõi tiến độ.\n4. Lưu ý thực tiễn:\n→ Cần chọn đối tượng so sánh có tính tương đồng về quy mô và ngành nghề.\n→ Không chỉ so sánh định lượng mà còn cả định tính (văn hóa, quy trình).\n→ Đảm bảo dữ liệu sử dụng hợp pháp và đáng tin cậy.\n5. Ví dụ minh họa:\n→ Ngân hàng A so sánh tỷ lệ vi phạm AML với chuẩn Basel AML Guidelines.\n→ Doanh nghiệp sản xuất so sánh hệ thống an toàn lao động với ISO 45001.\n6. Case Study Mini:\n→ Tình huống: Một công ty logistics muốn cải thiện hệ thống quản trị rủi ro chuỗi cung ứng.\n→ Giải pháp: Benchmark với chuẩn SCOR và các công ty hàng đầu trong ngành.\n→ Kết quả: Rút ngắn thời gian phản hồi rủi ro từ 14 ngày xuống 5 ngày.\n7. Câu hỏi kiểm tra nhanh (Quick Quiz):\nBenchmarking GRC chủ yếu giúp doanh nghiệp đạt được gì?\n→ a. Sao chép mô hình của đối thủ\n→ b. Xác định khoảng trống và cải tiến liên tục ←\n→ c. Giảm chi phí tuân thủ về 0\n→ d. Loại bỏ hoàn toàn rủi ro\n8. Câu hỏi tình huống (Scenario-Based Question):\nMột công ty FinTech mới thành lập muốn thu hút nhà đầu tư quốc tế. Nếu tiến hành benchmarking GRC, công ty nên chọn chuẩn nào để tăng tính tin cậy (ví dụ: ISO 27001, COSO, hay Basel AML Guidelines)?\n9. Vì sao bạn nên quan tâm đến khái niệm này:\n→ Giúp doanh nghiệp không tụt hậu so với chuẩn mực ngành.\n→ Tạo niềm tin cho cổ đông, khách hàng và cơ quan quản lý.\n→ Là cơ sở để nâng cao năng lực cạnh tranh toàn cầu.\n10. Ứng dụng thực tế trong công việc:\n→ Ban lãnh đạo: hoạch định chiến lược dựa trên kết quả benchmarking.\n→ Phòng rủi ro/tuân thủ: xây dựng quy trình và chính sách phù hợp.\n→ Kiểm toán nội bộ: đối chiếu thực hành hiện tại với chuẩn quốc tế.\n11. Sai lầm phổ biến khi triển khai:\n→ Chọn sai đối tượng hoặc chuẩn để so sánh.\n→ Thu thập dữ liệu không đầy đủ hoặc thiếu minh bạch.\n→ Chỉ sao chép mà không điều chỉnh theo bối cảnh riêng.\n12. Đối tượng áp dụng:\n→ Hội đồng quản trị, CRO, CCO, phòng chiến lược, kiểm toán nội bộ.\n13. Giới thiệu đơn giản dễ hiểu:\nBenchmarking GRC giống như “so găng” doanh nghiệp với những tay chơi hàng đầu, từ đó biết mình đang ở đâu và cần tập luyện thêm ở điểm nào.\n14. Câu hỏi thường gặp (FAQ):\nQ1 → Benchmarking khác gì với audit nội bộ?\n→ Audit đánh giá nội bộ, còn benchmarking so với bên ngoài.\nQ2 → Bao lâu nên benchmarking một lần?\n→ Thường từ 1–2 năm/lần hoặc sau thay đổi lớn trong ngành.\nQ3 → Có công cụ chuẩn hóa benchmarking không?\n→ Có, như GRC maturity models, ISO, COSO frameworks.\nQ4 → SME có nên benchmarking không?\n→ Có, giúp SMEs học hỏi nhanh từ thực hành tốt.\nQ5 → Benchmarking có tốn kém không?\n→ Có chi phí, nhưng lợi ích cải thiện dài hạn thường lớn hơn.\n15. Gợi ý hỗ trợ:\n→ Gửi email: info@fmit.vn\n→ Nhắn tin Zalo: 0708 25 99 25\n© Bản quyền thuộc về Viện FMIT – Từ điển quản trị chuẩn mực quốc tế"
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-sanh-du-bao-cuon-chieu-voi-ke-hoach-nam-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-sanh-du-bao-va-thuc-te-nhu-cau-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-sanh-giua-chuong-trinh-tang-toc-va-vuon-uom-khoi-nghiep-la-gi",
+    "h1": "Accelerator vs incubator comparison là gì",
+    "h2": "So sánh giữa chương trình tăng tốc và vườn ươm khởi nghiệp là gì",
+    "content": "1. Định nghĩa:\nAccelerator vs incubator comparison là sự đối chiếu, phân tích sự khác biệt và tương đồng giữa accelerator (chương trình tăng tốc khởi nghiệp) và incubator (vườn ươm khởi nghiệp). Đây là hai mô hình hỗ trợ startup phổ biến nhưng có mục tiêu, thời gian, phương thức hỗ trợ và cách thức đầu tư khác nhau.\n→ Ví dụ: Accelerator tập trung tăng trưởng nhanh trong 3–6 tháng; incubator hỗ trợ lâu dài từ 1–3 năm cho startup còn rất sớm.\n2. Mục đích sử dụng:\n→ Giúp startup lựa chọn đúng mô hình phù hợp với giai đoạn phát triển.\n→ Hỗ trợ nhà đầu tư, chính phủ, trường đại học thiết kế chương trình đúng nhu cầu.\n→ Tạo sự rõ ràng trong kỳ vọng và cam kết giữa startup và tổ chức hỗ trợ.\n3. Các bước áp dụng và ví dụ thực tiễn:\nBối cảnh: Một startup công nghệ giáo dục đang cân nhắc tham gia hỗ trợ khởi nghiệp.\n→ Bước 1: Xác định giai đoạn hiện tại (ý tưởng, MVP, tăng trưởng).\n→ Bước 2: So sánh incubator (hỗ trợ dài hạn, ít vốn) và accelerator (tăng tốc ngắn hạn, có vốn đổi cổ phần).\n→ Bước 3: Đánh giá nguồn lực, mentor, mạng lưới của từng chương trình.\n→ Bước 4: Lựa chọn mô hình phù hợp nhất với chiến lược.\n→ Bước 5: Theo dõi tiến độ và đo lường kết quả sau chương trình.\n4. Lưu ý thực tiễn:\n→ Incubator thích hợp cho startup còn rất sơ khai, chưa có sản phẩm.\n→ Accelerator phù hợp cho startup đã có MVP và muốn tăng trưởng nhanh.\n→ Có thể kết hợp cả hai, nhưng không nên tham gia trùng lặp gây lãng phí nguồn lực.\n5. Ví dụ minh họa:\n→ Cơ bản: Một startup ý tưởng AI tham gia incubator trong 18 tháng để phát triển sản phẩm.\n→ Nâng cao: Sau khi có MVP, startup này tiếp tục tham gia accelerator fintech để gọi vốn và mở rộng thị trường trong 4 tháng.\n6. Case Study Mini:\n→ Tình huống: Một startup y tế số đang ở giai đoạn nghiên cứu.\n→ Giải pháp: Tham gia incubator đại học để nhận phòng thí nghiệm, mentor khoa học.\n→ Kết quả: Sau 2 năm, phát triển thành công sản phẩm mẫu, rồi chuyển sang accelerator y tế để thương mại hóa.\n7. Câu hỏi kiểm tra nhanh (Quick Quiz):\nĐiểm khác biệt chính giữa accelerator và incubator là gì?\n→ a. Accelerator tăng tốc ngắn hạn, incubator hỗ trợ dài hạn ←\n→ b. Accelerator miễn phí, incubator chỉ lấy cổ phần\n→ c. Accelerator chỉ dành cho startup công nghệ\n→ d. Incubator không cung cấp mentor\n8. Câu hỏi tình huống (Scenario-Based Question):\nNếu bạn là nhà sáng lập startup fintech đã có sản phẩm MVP, bạn nên chọn accelerator hay incubator? Vì sao?\n9. Vì sao bạn nên quan tâm đến khái niệm này:\n→ Giúp startup tiết kiệm thời gian và nguồn lực khi chọn chương trình phù hợp.\n→ Tránh nhầm lẫn giữa incubator và accelerator.\n→ Tạo ra chiến lược phát triển hiệu quả theo từng giai đoạn khởi nghiệp.\n10. Ứng dụng thực tế trong công việc:\n→ Startup: chọn đúng mô hình hỗ trợ.\n→ Nhà đầu tư: phân loại startup để tài trợ phù hợp.\n→ Doanh nghiệp: hợp tác với startup theo từng giai đoạn.\n→ Chính phủ/đại học: thiết kế chính sách và chương trình hỗ trợ hệ sinh thái.\n11. Sai lầm phổ biến khi triển khai:\n→ Startup tham gia incubator khi đã quá muộn (sản phẩm đã sẵn sàng).\n→ Accelerator chọn startup quá non, không phù hợp.\n→ Đánh đồng cả hai mô hình dẫn đến kỳ vọng sai lệch.\n12. Đối tượng áp dụng:\n→ Startup, accelerator, incubator, nhà đầu tư, chính phủ, đại học.\n→ Áp dụng trong: công nghệ, giáo dục, y tế, fintech, năng lượng.\n13. Giới thiệu đơn giản dễ hiểu:\nSo sánh accelerator và incubator giống như “lớp học tăng tốc” và “lớp nền tảng”: accelerator giúp startup chạy nhanh, incubator giúp startup xây nền móng vững chắc.\n14. Câu hỏi thường gặp (FAQ):\nQ1 → Accelerator có luôn kèm vốn không?\n→ Thường có, đổi lấy cổ phần.\nQ2 → Incubator có đầu tư vốn không?\n→ Hiếm, chủ yếu hỗ trợ cơ sở vật chất, mentor.\nQ3 → Thời gian hỗ trợ bao lâu?\n→ Accelerator: 3–6 tháng; incubator: 1–3 năm.\nQ4 → Có thể tham gia cả hai không?\n→ Có, theo từng giai đoạn phát triển.\nQ5 → Tập đoàn thường chọn mô hình nào?\n→ Accelerator, để nhanh chóng tích hợp công nghệ.\n15. Gợi ý hỗ trợ:\n→ Gửi email: info@fmit.vn\n→ Nhắn tin Zalo: 0708 25 99 25\n© Bản quyền thuộc về Viện FMIT – Từ điển quản trị chuẩn mực quốc tế"
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-sanh-phong-thi-nghiem-doi-moi-va-chuong-trinh-tang-toc-la-gi",
+    "h1": "Innovation lab vs accelerator là gì",
+    "h2": "So sánh phòng thí nghiệm đổi mới và chương trình tăng tốc là gì",
+    "content": "1. Định nghĩa:\n“So sánh Innovation Lab vs Accelerator” đề cập đến sự khác biệt giữa phòng thí nghiệm đổi mới (Innovation Lab) – nơi tạo ra, thử nghiệm và phát triển ý tưởng mới, và chương trình tăng tốc (Accelerator) – nơi giúp các ý tưởng hoặc startup đã có sản phẩm tăng trưởng nhanh, mở rộng thị trường và thương mại hóa.\n→ Ví dụ: Google có “Area 120 Innovation Lab” để thử nghiệm ý tưởng nội bộ và “Google for Startups Accelerator” để tăng tốc các sản phẩm đã sẵn sàng ra thị trường.\n2. Mục đích sử dụng:\n→ Phân biệt rõ vai trò của phòng đổi mới và chương trình tăng tốc trong hệ sinh thái doanh nghiệp.\n→ Giúp doanh nghiệp đầu tư đúng vào giai đoạn phát triển của sản phẩm hoặc startup.\n→ Tối ưu hiệu quả giữa sáng tạo nội bộ và hợp tác bên ngoài.\n3. Các bước áp dụng và ví dụ thực tiễn:\nBối cảnh: Một tập đoàn công nghiệp muốn triển khai chiến lược đổi mới kép (dual innovation strategy).\n→ Bước 1: Thiết lập innovation lab để nghiên cứu, thử nghiệm ý tưởng và công nghệ mới.\n→ Bước 2: Khi có sản phẩm khả thi, chuyển sang accelerator để phát triển và thương mại hóa.\n→ Bước 3: Kết nối hai mô hình thông qua hệ thống quản lý đổi mới tích hợp.\n→ Bước 4: Đo lường tác động của từng mô hình đối với tăng trưởng doanh nghiệp.\n→ Bước 5: Mở rộng hợp tác với startup bên ngoài để làm giàu pipeline đổi mới.\n4. Lưu ý thực tiễn:\n→ Innovation lab tập trung vào khám phá (exploration), accelerator tập trung vào mở rộng (execution).\n→ Hai mô hình nên vận hành song song và liên kết chặt chẽ.\n→ Không nên nhầm lẫn innovation lab là nơi chỉ làm nghiên cứu mà không hướng tới ứng dụng.\n5. Ví dụ minh họa:\n→ Cơ bản: Một trường đại học tạo innovation lab để sinh viên nghiên cứu AI, sau đó chọn các dự án tiềm năng đưa vào accelerator để gọi vốn.\n→ Nâng cao: Airbus có “ProtoSpace Innovation Lab” cho nghiên cứu công nghệ hàng không và “BizLab Accelerator” cho các dự án đủ điều kiện triển khai thương mại.\n6. Case Study Mini:\n→ Tình huống: Một công ty ngân hàng muốn phát triển sản phẩm tài chính số.\n→ Giải pháp: Thành lập innovation lab để thử nghiệm công nghệ nhận dạng khách hàng (KYC) bằng AI, sau đó chuyển kết quả sang accelerator để triển khai ra thị trường.\n→ Kết quả: Ứng dụng KYC AI được triển khai trong toàn bộ hệ thống chỉ sau 8 tháng.\n7. Câu hỏi kiểm tra nhanh (Quick Quiz):\nInnovation Lab khác Accelerator ở điểm nào?\n→ a. Lab tập trung vào nghiên cứu và thử nghiệm, Accelerator tập trung vào tăng trưởng và thương mại hóa ←\n→ b. Cả hai đều chỉ dùng cho startup\n→ c. Accelerator có giai đoạn dài hơn Lab\n→ d. Lab chỉ dành cho nhân viên nội bộ\n8. Câu hỏi tình huống (Scenario-Based Question):\nMột tập đoàn năng lượng có nhiều ý tưởng R&D chưa ứng dụng được. Họ nên bắt đầu từ Innovation Lab hay Accelerator để đạt hiệu quả tối đa?\n9. Vì sao bạn nên quan tâm đến khái niệm này:\n→ Giúp doanh nghiệp xác định rõ giai đoạn đổi mới phù hợp.\n→ Tối ưu ngân sách đầu tư R&D và chương trình khởi nghiệp.\n→ Tạo chuỗi giá trị đổi mới hoàn chỉnh từ ý tưởng đến thương mại hóa.\n10. Ứng dụng thực tế trong công việc:\n→ Quản lý chiến lược: thiết kế quy trình chuyển đổi từ lab sang accelerator.\n→ R&D: tập trung tạo nguyên mẫu (prototype) khả thi.\n→ Corporate innovation: theo dõi kết quả và chọn dự án đủ điều kiện scale-up.\n→ Đầu tư: chọn thời điểm rót vốn hợp lý vào startup hoặc dự án nội bộ.\n11. Sai lầm phổ biến khi triển khai:\n→ Thiếu cầu nối giữa Lab và Accelerator dẫn đến “chết yểu” ý tưởng.\n→ Tập trung quá nhiều vào nghiên cứu mà quên mất thương mại hóa.\n→ Thiếu tiêu chí đánh giá rõ ràng cho việc chuyển giao dự án.\n12. Đối tượng áp dụng:\n→ Chief Innovation Officer, R&D Director, Venture Manager, Startup Founder.\n→ Áp dụng trong: công nghệ, tài chính, năng lượng, sản xuất, y tế, giáo dục, quốc phòng.\n13. Giới thiệu đơn giản dễ hiểu:\nInnovation Lab giống như “phòng thí nghiệm ý tưởng”, còn Accelerator là “đường cao tốc” giúp ý tưởng thành sản phẩm thật và ra thị trường nhanh chóng.\n14. Câu hỏi thường gặp (FAQ):\nQ1 → Có thể kết hợp cả hai mô hình không?\n→ Có, gọi là Innovation-to-Market Pipeline.\nQ2 → Ai nên điều hành innovation lab?\n→ Bộ phận R&D hoặc Corporate Innovation.\nQ3 → Accelerator có cần đầu tư vốn không?\n→ Có, để giúp startup mở rộng và thương mại hóa.\nQ4 → Lab có tạo ra lợi nhuận không?\n→ Gián tiếp, thông qua sản phẩm và công nghệ mới.\nQ5 → Có thể mở lab hợp tác bên ngoài không?\n→ Có, gọi là “Open Innovation Lab”.\n15. Gợi ý hỗ trợ:\n→ Gửi email: info@fmit.vn\n→ Nhắn tin Zalo: 0708 25 99 25\n© Bản quyền thuộc về Viện FMIT – Từ điển quản trị chuẩn mực quốc tế"
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-sanh-tieu-thu-du-bao-voi-ke-hoach-nhu-cau-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/so-sanh-truyen-thong-thay-doi-va-truyen-thong-khung-hoang-la-gi",
+    "h1": "Change Communication vs Crisis Communication là gì",
+    "h2": "So sánh truyền thông thay đổi và truyền thông khủng hoảng là gì",
+    "content": "1. Định nghĩa:\nChange Communication là quá trình truyền thông nhằm hỗ trợ triển khai các thay đổi trong tổ chức, bao gồm thay đổi chiến lược, quy trình, công nghệ hoặc văn hóa\nCrisis Communication là quá trình truyền thông nhằm quản lý các tình huống khẩn cấp, rủi ro hoặc sự cố bất ngờ ảnh hưởng đến uy tín, tài chính hoặc vận hành tổ chức\n→ Ví dụ: Công ty triển khai ERP mới là Change Communication; khi hệ thống ERP bị lỗi làm gián đoạn vận hành là Crisis Communication\n2. Mục đích sử dụng:\n→ Change Communication: Đảm bảo nhân viên hiểu, đồng thuận và thực hiện thay đổi\n→ Crisis Communication: Giảm thiểu tác động tiêu cực, duy trì niềm tin và uy tín\n→ Cả hai: Tăng minh bạch, trách nhiệm giải trình và hiệu quả tổ chức\n3. Các bước áp dụng và ví dụ thực tiễn:\nBối cảnh: Doanh nghiệp vừa triển khai thay đổi quy trình và gặp sự cố ngoài kế hoạch\n→ Change Communication: Xác định thông điệp, kênh phù hợp, triển khai theo giai đoạn, thu thập phản hồi\n→ Crisis Communication: Kích hoạt nhóm khủng hoảng, thông báo kịp thời, hướng dẫn giải quyết, theo dõi và đánh giá hậu quả\n→ Ví dụ: ERP triển khai theo kế hoạch → gửi email hướng dẫn nhân viên; lỗi hệ thống → thông báo ngay đến quản lý, khách hàng nội bộ và hỗ trợ giải quyết\n4. Lưu ý thực tiễn:\n→ Change Communication cần chủ động và có kế hoạch, tập trung vào đào tạo và thuyết phục\n→ Crisis Communication cần phản ứng nhanh, minh bạch và phối hợp liên phòng ban\n→ Phân biệt rõ ràng kịch bản, thông điệp và mục tiêu để tránh nhầm lẫn\n5. Ví dụ minh họa:\n→ Cơ bản: Email hướng dẫn sử dụng phần mềm mới là Change Communication; Email thông báo lỗi hệ thống và hướng dẫn xử lý là Crisis Communication\n→ Nâng cao: Dashboard theo dõi phản hồi Change Communication và sentiment khách hàng nội bộ trong Crisis Communication\n6. Case Study Mini:\n→ Tình huống: Một công ty triển khai ERP và gặp lỗi dữ liệu\n→ Giải pháp: Change Communication – đào tạo nhân viên; Crisis Communication – thông báo ngay, hướng dẫn khắc phục, hỗ trợ realtime\n→ Kết quả: Nhân viên nắm vững quy trình, rủi ro được giảm thiểu, tổ chức duy trì uy tín\n7. Câu hỏi kiểm tra nhanh (Quick Quiz):\nĐiểm khác biệt chính giữa Change Communication và Crisis Communication là gì?\n→ a. Change Communication chủ động, Crisis Communication phản ứng ←\n→ b. Cả hai đều chỉ truyền thông nội bộ\n→ c. Change Communication dùng khi khủng hoảng\n→ d. Crisis Communication chỉ dùng cho marketing\n8. Câu hỏi tình huống (Scenario-Based Question):\nNếu doanh nghiệp vừa triển khai thay đổi công nghệ và gặp lỗi vận hành, bạn sẽ phân loại truyền thông nào cho từng bước xử lý?\n9. Vì sao bạn nên quan tâm đến khái niệm này:\n→ Giúp phân biệt rõ mục tiêu, kịch bản và phương pháp truyền thông\n→ Đảm bảo nhân viên hiểu, tổ chức phản ứng nhanh khi sự cố xảy ra\n→ Tối ưu hiệu quả thay đổi và giảm thiểu rủi ro khủng hoảng\n10. Ứng dụng thực tế trong công việc:\n→ Lãnh đạo: điều phối thông điệp, ra quyết định đúng thời điểm\n→ PR/Truyền thông: triển khai thông điệp phù hợp cho Change hoặc Crisis\n→ HR: hỗ trợ đào tạo và thu thập feedback\n→ Nhân viên: tiếp nhận thông tin và thực hiện theo hướng dẫn\n11. Sai lầm phổ biến khi triển khai:\n→ Nhầm lẫn kịch bản và thông điệp giữa Change và Crisis\n→ Không chuẩn bị sẵn kênh phản hồi trong trường hợp khủng hoảng\n→ Thông điệp mơ hồ, không minh bạch\n12. Đối tượng áp dụng:\n→ Doanh nghiệp, tổ chức công, phi lợi nhuận\n→ Lãnh đạo, PR, HR, quản lý dự án, nhân viên\n13. Giới thiệu đơn giản dễ hiểu:\nChange Communication và Crisis Communication giống như “điều khiển hai chế độ”: một để hướng dẫn nhân viên thay đổi có kế hoạch, một để phản ứng nhanh khi có sự cố.\n14. Câu hỏi thường gặp (FAQ):\nQ1 → Có thể dùng Change Communication cho khủng hoảng không?\n→ Không, cần phản ứng nhanh theo kịch bản Crisis Communication\nQ2 → SMEs có cần phân biệt không?\n→ Có, để chuẩn bị và xử lý đúng cách\nQ3 → Bao lâu nên rà soát quy trình truyền thông?\n→ Sau mỗi dự án thay đổi và khủng hoảng\nQ4 → Công cụ hỗ trợ cho cả hai là gì?\n→ Dashboard, email, intranet, social listening, collaboration tools\nQ5 → Ai phụ trách phân loại kịch bản?\n→ Lãnh đạo, PR và quản lý dự án phối hợp\n15. Gợi ý hỗ trợ:\n→ Gửi email: info@fmit.vn\n→ Nhắn tin Zalo: 0708 25 99 25\n© Bản quyền thuộc về Viện FMIT – Từ điển quản trị chuẩn mực quốc tế"
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tich-hop-ben-vung-trong-doanh-nghiep-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tich-hop-chien-luoc-toan-dien-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tich-hop-du-lieu-mem-trong-du-bao-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tich-hop-nhip-dap-thi-truong-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tich-hop-nhu-cau-da-kenh-toan-dien-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tich-hop-phan-hoi-khach-hang-vao-du-bao-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tich-hop-phan-hoi-trong-du-bao-ai-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tich-hop-phan-khuc-vao-ke-hoach-nhu-cau-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tich-hop-scor-voi-erp-la-gi",
+    "h1": "Integration of SCOR with ERP là gì",
+    "h2": "Tích hợp SCOR với ERP là gì",
+    "content": "1. Định nghĩa:\nIntegration of SCOR with ERP (Tích hợp SCOR với ERP) là việc kết nối mô hình SCOR với hệ thống hoạch định nguồn lực doanh nghiệp (Enterprise Resource Planning) nhằm đồng bộ hóa quy trình, dữ liệu và KPI chuỗi cung ứng với quản trị tổng thể doanh nghiệp.\n→ Ví dụ: Một công ty dược phẩm tích hợp SCOR với SAP ERP để chuẩn hóa quy trình Plan – Source – Make – Deliver.\n2. Mục đích sử dụng:\n→ Liên kết chuẩn SCOR với hệ thống ERP để đảm bảo dữ liệu đồng bộ và minh bạch\n→ Hỗ trợ đo lường KPI SCOR trực tiếp trên hệ thống ERP\n→ Giảm rủi ro do dữ liệu rời rạc và xử lý thủ công\n→ Tăng khả năng phân tích, ra quyết định nhanh và chính xác hơn\n3. Các bước áp dụng và ví dụ thực tiễn:\nBối cảnh: Một công ty FMCG triển khai SCOR và cần ERP để quản lý dữ liệu chuỗi cung ứng.\n→ Bước 1: Xác định quy trình SCOR cần tích hợp (Plan, Source, Make, Deliver, Return, Enable).\n→ Bước 2: Mapping quy trình SCOR với module ERP (SAP, Oracle, Microsoft Dynamics...).\n→ Bước 3: Thiết lập KPI SCOR trong hệ thống ERP.\n→ Bước 4: Kiểm thử tích hợp và đào tạo người dùng.\n→ Bước 5: Vận hành chính thức và cải tiến liên tục.\n4. Lưu ý thực tiễn:\n→ ERP là nền tảng dữ liệu, SCOR là khung quản trị – cả hai cần đồng bộ hóa chặt chẽ\n→ Tích hợp có thể phức tạp, cần đội ngũ IT và tư vấn SCOR\n→ KPI SCOR phải được thiết lập ngay trong ERP để tránh đo thủ công\n5. Ví dụ minh họa:\n→ Cơ bản: Một công ty logistics tích hợp SCOR Deliver với ERP để theo dõi thời gian giao hàng\n→ Nâng cao: Một tập đoàn điện tử tích hợp toàn bộ SCOR với ERP SAP HANA, giúp giảm 15% chi phí vận hành và tăng độ chính xác dự báo 20%\n6. Case Study Mini:\n→ Tình huống: Một công ty bán lẻ đo KPI SCOR bằng Excel thủ công, tốn nhiều thời gian.\n→ Giải pháp: Tích hợp SCOR KPI trực tiếp vào ERP.\n→ Kết quả: Giảm 70% lỗi nhập liệu, tăng tính chính xác và cập nhật dữ liệu thời gian thực.\n7. Câu hỏi kiểm tra nhanh (Quick Quiz):\nTích hợp SCOR với ERP mang lại lợi ích gì?\n→ a. Đồng bộ dữ liệu và hỗ trợ đo KPI SCOR trong hệ thống ERP ←\n→ b. Làm tăng sự rời rạc dữ liệu\n→ c. Loại bỏ nhu cầu đào tạo nhân viên\n→ d. Chỉ áp dụng cho công ty công nghệ\n8. Câu hỏi tình huống (Scenario-Based Question):\nMột công ty dược phẩm triển khai SCOR nhưng KPI còn đo thủ công. Họ nên ưu tiên bước nào: tích hợp SCOR vào ERP, đào tạo nhân viên Excel nâng cao, hay thuê ngoài dịch vụ phân tích dữ liệu?\n9. Vì sao bạn nên quan tâm đến khái niệm này:\n→ ERP là “bộ não dữ liệu”, SCOR là “khung quản trị” – tích hợp giúp tăng sức mạnh kép\n→ Giúp doanh nghiệp đo lường và cải tiến liên tục theo chuẩn quốc tế\n→ Hạn chế sai sót, tăng tốc độ và chất lượng ra quyết định\n→ Là nền tảng để triển khai số hóa chuỗi cung ứng (Digital Supply Chain)\n10. Ứng dụng thực tế trong công việc:\n→ Quản lý chuỗi cung ứng: theo dõi KPI SCOR trực tiếp trên ERP\n→ Kế toán – tài chính: liên kết dữ liệu chi phí chuỗi cung ứng với ERP\n→ IT: xây dựng giải pháp tích hợp ERP – SCOR\n→ Lãnh đạo: có dashboard báo cáo SCOR ngay trong ERP\n11. Sai lầm phổ biến khi triển khai:\n→ Chỉ triển khai ERP mà bỏ qua khung quản trị SCOR\n→ Đo KPI SCOR ngoài hệ thống ERP → thiếu đồng bộ\n→ Thiếu phối hợp giữa bộ phận IT và chuỗi cung ứng\n→ Không đào tạo nhân sự vận hành ERP theo SCOR\n12. Đối tượng áp dụng:\n→ CEO, CIO, Supply Chain Director, IT Manager, ERP Consultant\n→ Áp dụng trong: triển khai SCOR, số hóa chuỗi cung ứng, quản trị KPI\n13. Giới thiệu đơn giản dễ hiểu:\nIntegration of SCOR with ERP giống như “nối SCOR vào hệ thần kinh ERP” – giúp doanh nghiệp vận hành trơn tru và ra quyết định dựa trên dữ liệu chuẩn hóa.\n14. Câu hỏi thường gặp (FAQ):\nQ1 → Tích hợp SCOR với ERP có bắt buộc không?\n→ Không bắt buộc, nhưng là yếu tố then chốt để SCOR phát huy giá trị.\nQ2 → Doanh nghiệp nhỏ có thể tích hợp SCOR với ERP không?\n→ Có. ERP cloud-based (SAP Business One, Odoo) phù hợp cho doanh nghiệp nhỏ.\nQ3 → Tích hợp SCOR vào ERP có tốn kém không?\n→ Chi phí phụ thuộc vào quy mô và mức độ tích hợp.\nQ4 → ERP nào thường tích hợp với SCOR?\n→ SAP, Oracle, Microsoft Dynamics, Infor, Odoo.\nQ5 → ERP có thể tự động báo cáo KPI SCOR không?\n→ Có, nếu được thiết lập đúng theo framework SCOR.\n15. Thuật ngữ liên quan:\n– ERP (Enterprise Resource Planning): Hoạch định nguồn lực doanh nghiệp\n– SCOR KPI: Chỉ số hiệu suất SCOR\n– System Integration: Tích hợp hệ thống\n– Data Synchronization: Đồng bộ dữ liệu\n– Digital Supply Chain: Chuỗi cung ứng số\n– Business Intelligence (BI): Phân tích thông minh doanh nghiệp\n16. Gợi ý hỗ trợ:\n→ Gửi email: info@fmit.vn\n→ Nhắn tin Zalo: 0708 25 99 25\n© Bản quyền thuộc về Viện FMIT – Từ điển quản trị chuẩn mực quốc tế"
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tich-hop-tin-hieu-nhu-cau-ben-ngoai-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tich-hop-tuan-thu-dua-tren-kiem-toan-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tich-hop-tuan-thu-voi-so-dang-ky-rui-ro-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tieu-chi-kich-hoat-dieu-chinh-du-bao-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tieu-thu-du-bao-trong-hoach-dinh-nhu-cau-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tin-hieu-cam-xuc-khach-hang-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tin-hieu-kich-hoat-dieu-chinh-du-bao-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tin-hieu-kich-hoat-tai-lap-ke-hoach-du-bao-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tin-hieu-kpi-dao-nguoc-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tin-hieu-minh-bach-du-bao-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tin-hieu-nhu-cau-da-kenh-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tin-hieu-phan-hoi-du-bao-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tin-hieu-sai-lech-kpi-ton-kho-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tin-hieu-so-voi-nhieu-trong-du-bao-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tin-hieu-troi-lech-ton-kho-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tin-hieu-van-hoa-du-bao-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tinh-gia-thanh-dua-tren-co-so-so-0-la-gi",
+    "h1": "Zero-based costing là gì",
+    "h2": "Tính giá thành dựa trên cơ sở số 0 là gì",
+    "content": "1. Định nghĩa:\nZero-based costing (Tính giá thành dựa trên cơ sở số 0) là phương pháp quản lý chi phí trong đó tất cả các khoản chi đều phải được biện minh từ đầu (“từ số 0”) thay vì dựa vào số liệu lịch sử. Mỗi chi phí phát sinh đều cần lý do và phân tích giá trị, đảm bảo chỉ những chi phí mang lại lợi ích thiết thực mới được phê duyệt.\n→ Ví dụ: Thay vì mặc định chi phí marketing năm nay = năm trước + 10%, doanh nghiệp yêu cầu từng bộ phận giải trình chi phí từ đầu cho từng hoạt động.\n2. Mục đích sử dụng:\n→ Loại bỏ chi phí lãng phí và thói quen “ngân sách tăng dần theo năm”\n→ Đảm bảo mỗi đồng chi tiêu đều mang lại giá trị\n→ Tạo kỷ luật tài chính và tối ưu hóa cơ cấu chi phí\n3. Các bước áp dụng và ví dụ thực tiễn:\n→ Bước 1: Xác định toàn bộ danh mục chi phí cần xem xét lại\n→ Bước 2: Yêu cầu các bộ phận giải trình và biện minh từng khoản chi từ đầu\n→ Bước 3: Đánh giá chi phí theo giá trị mang lại (value-for-money)\n→ Bước 4: Phê duyệt hoặc loại bỏ chi phí không hợp lý\n→ Bước 5: Theo dõi việc thực hiện và lặp lại định kỳ (thường hàng năm)\n4. Lưu ý thực tiễn:\n→ Phương pháp này tốn công sức, phù hợp cho môi trường cần cắt giảm chi phí mạnh hoặc tái cấu trúc\n→ Cần sự phối hợp chặt chẽ giữa CFO, BU leaders và CEO\n→ Có thể kết hợp với zero-based budgeting (ZBB) để đồng bộ kế hoạch tài chính\n5. Ví dụ minh họa:\n→ Cơ bản: SME yêu cầu tất cả khoản chi văn phòng phẩm phải giải trình thay vì mặc định theo mức năm trước\n→ Nâng cao: Tập đoàn FMCG áp dụng zero-based costing toàn cầu, tiết kiệm 1 tỷ USD chi phí SG&A trong 3 năm\n6. Case Study Mini:\n→ Tình huống: Một công ty đa quốc gia bị cổ đông gây áp lực giảm chi phí\n→ Giải pháp: CFO áp dụng zero-based costing, loại bỏ 20% chi phí marketing không tạo ROI\n→ Kết quả: Biên lợi nhuận EBITDA tăng thêm 5% trong vòng 1 năm\n7. Câu hỏi kiểm tra nhanh (Quick Quiz):\nZero-based costing khác gì với phương pháp truyền thống?\n→ a. Yêu cầu biện minh từng chi phí từ đầu, không dựa vào lịch sử ←\n→ b. Luôn giữ nguyên ngân sách năm trước\n→ c. Tăng chi phí đều đặn theo % cố định\n→ d. Chỉ áp dụng cho báo cáo thuế\n8. Câu hỏi tình huống (Scenario-Based Question):\nMột startup đang burn rate cao và chỉ còn runway 9 tháng. CFO nên áp dụng zero-based costing thế nào để kéo dài runway mà không làm ảnh hưởng đến hoạt động cốt lõi?\n9. Vì sao bạn nên quan tâm đến khái niệm này:\n→ Zero-based costing giúp doanh nghiệp kỷ luật tài chính hơn\n→ Là công cụ mạnh mẽ để tái cấu trúc chi phí và tăng lợi nhuận\n10. Ứng dụng thực tế trong công việc:\n→ CFO: khởi xướng và giám sát quá trình zero-based costing\n→ Controller: thu thập và chuẩn hóa dữ liệu chi phí\n→ BU Leaders: giải trình và biện minh chi phí bộ phận\n→ HĐQT: phê duyệt các quyết định cắt giảm và phân bổ nguồn lực\n11. Sai lầm phổ biến khi triển khai:\n→ Quá chi tiết gây tốn kém thời gian và nguồn lực\n→ Chỉ tập trung cắt giảm ngắn hạn, bỏ qua giá trị dài hạn\n→ Thiếu buy-in từ BU leaders dẫn đến phản kháng\n12. Đối tượng áp dụng:\n→ CFO, Controller, BU Leaders, CEO, HĐQT\n→ SME, startup, công ty niêm yết, tập đoàn đa quốc gia\n13. Giới thiệu đơn giản dễ hiểu:\nZero-based costing giống như “bắt đầu từ trang giấy trắng” – mọi chi phí đều phải chứng minh giá trị để được tồn tại.\n14. Câu hỏi thường gặp:\nQ1 → Zero-based costing có áp dụng hàng năm không?\n→ Thường áp dụng hàng năm hoặc khi công ty cần tái cấu trúc\nQ2 → Khác gì với ZBB (Zero-based Budgeting)?\n→ ZBB là lập ngân sách từ 0, còn ZBC là phân bổ chi phí từ 0; hai khái niệm bổ trợ cho nhau\nQ3 → Công cụ nào hỗ trợ tốt?\n→ Excel, Anaplan, Adaptive Insights, ERP analytics\n15. Gợi ý hỗ trợ:\n→ Gửi email: info@fmit.vn\n→ Nhắn tin Zalo: 0708 25 99 25\n© Bản quyền thuộc về Viện FMIT – Từ điển quản trị chuẩn mực quốc tế"
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tinh-toan-ven-cua-duong-ong-du-lieu-du-bao-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tinh-trung-kpi-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/toi-uu-hoa-do-tre-la-gi",
+    "h1": "Latency Optimization là gì",
+    "h2": "Tối ưu hóa độ trễ là gì",
+    "content": "1. Định nghĩa:\nLatency Optimization (Tối ưu hóa độ trễ) là tập hợp các biện pháp, kỹ thuật và công cụ được áp dụng để giảm thời gian trễ trong quá trình truyền dữ liệu hoặc xử lý ứng dụng nhằm cải thiện hiệu suất hệ thống và trải nghiệm người dùng.\n→ Ví dụ: Một công ty game sử dụng edge computing để giảm latency từ 150ms xuống 40ms cho người chơi ở khu vực xa server chính.\n2. Mục đích sử dụng:\n→ Đảm bảo dịch vụ phản hồi nhanh và ổn định.\n→ Tăng cường trải nghiệm khách hàng, đặc biệt với ứng dụng thời gian thực.\n→ Giảm thiểu rủi ro vi phạm SLA và mất doanh thu do hiệu suất kém.\n3. Các bước áp dụng và ví dụ thực tiễn:\nBối cảnh: Một doanh nghiệp SaaS triển khai dịch vụ API cho khách hàng toàn cầu.\n→ Bước 1: Đo lường latency hiện tại bằng công cụ (APM, Ping, Traceroute).\n→ Bước 2: Xác định thành phần gây trễ (mạng, server, ứng dụng, cơ sở dữ liệu).\n→ Bước 3: Áp dụng kỹ thuật tối ưu: caching, CDN, load balancing, QoS.\n→ Bước 4: Kiểm tra hiệu quả sau tối ưu bằng benchmark.\n→ Bước 5: Giám sát liên tục để điều chỉnh theo lưu lượng thực tế.\n4. Lưu ý thực tiễn:\n→ Không có giải pháp duy nhất, cần kết hợp nhiều kỹ thuật.\n→ Latency tối ưu hóa phụ thuộc vào loại dịch vụ (web, video, game, fintech).\n→ Nên cân nhắc chi phí – lợi ích khi đầu tư giải pháp.\n5. Ví dụ minh họa:\n→ Cơ bản: Website thương mại điện tử dùng CDN để giảm thời gian tải trang.\n→ Nâng cao: Hệ thống giao dịch tài chính sử dụng hạ tầng low-latency network để xử lý lệnh trong <10ms.\n6. Case Study Mini:\n→ Tình huống: Một nền tảng video streaming bị lag vào giờ cao điểm.\n→ Giải pháp: Tích hợp CDN và tối ưu TCP tuning.\n→ Kết quả: Latency giảm 55%, tỷ lệ người dùng rời bỏ dịch vụ giảm mạnh.\n7. Câu hỏi kiểm tra nhanh (Quick Quiz):\nLatency Optimization giúp doanh nghiệp đạt điều gì?\n→ a. Giảm độ trễ và nâng cao trải nghiệm người dùng ←\n→ b. Loại bỏ hoàn toàn downtime\n→ c. Tăng chi phí vận hành mà không cải thiện dịch vụ\n→ d. Chỉ áp dụng cho hệ thống nội bộ\n8. Câu hỏi tình huống (Scenario-Based Question):\nMột startup fintech cung cấp API thanh toán quốc tế, nhưng khách hàng tại châu Âu phản ánh giao dịch chậm. Nếu triển khai Latency Optimization, họ nên ưu tiên kỹ thuật nào trước (ví dụ: CDN, multi-region, API caching)?\n9. Vì sao bạn nên quan tâm đến khái niệm này:\n→ Latency ảnh hưởng trực tiếp đến hiệu quả kinh doanh và trải nghiệm người dùng.\n→ Tối ưu hóa giúp tăng khả năng cạnh tranh và giữ chân khách hàng.\n→ Là yêu cầu cốt lõi để duy trì SLA trong dịch vụ toàn cầu.\n10. Ứng dụng thực tế trong công việc:\n→ Network Engineer: tối ưu định tuyến và băng thông.\n→ IT Operations: triển khai giám sát và cải thiện latency theo SLA.\n→ Product Manager: cải thiện trải nghiệm sản phẩm.\n11. Sai lầm phổ biến khi triển khai:\n→ Chỉ tập trung vào phần cứng mà bỏ qua ứng dụng.\n→ Tối ưu hóa một lần rồi bỏ qua monitoring liên tục.\n→ Không đo lường trước – sau để đánh giá hiệu quả.\n12. Đối tượng áp dụng:\n→ CIO, Network Engineer, IT Operations, Product Manager.\n→ Áp dụng trong: SaaS, fintech, gaming, media streaming.\n13. Giới thiệu đơn giản dễ hiểu:\nLatency Optimization giống như “bôi trơn đường ống dữ liệu” giúp thông tin đi nhanh hơn, giảm chờ đợi.\n14. Câu hỏi thường gặp (FAQ):\nQ1 → Có thể giảm latency về 0 không?\n→ Không, luôn tồn tại trễ vật lý tối thiểu.\nQ2 → Kỹ thuật tối ưu phổ biến nhất là gì?\n→ CDN, caching, load balancing, edge computing.\nQ3 → Latency tối ưu bao nhiêu ms là tốt?\n→ Web <500ms, game <100ms, fintech <50ms.\nQ4 → Công cụ hỗ trợ Latency Optimization?\n→ Datadog, New Relic, AppDynamics, ThousandEyes.\n15. Gợi ý hỗ trợ:\n→ Gửi email: info@fmit.vn\n→ Nhắn tin Zalo: 0708 25 99 25\n© Bản quyền thuộc về Viện FMIT – Từ điển quản trị chuẩn mực quốc tế"
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/toi-uu-hoa-giao-hang-bang-may-hoc-la-gi",
+    "h1": "Machine learning delivery optimization là gì",
+    "h2": "Tối ưu hóa giao hàng bằng máy học là gì",
+    "content": "1. Định nghĩa:\nMachine learning delivery optimization là việc ứng dụng thuật toán máy học (machine learning) để phân tích dữ liệu từ các đơn hàng, tuyến đường, hành vi khách hàng và điều kiện giao thông nhằm tối ưu hóa quy trình giao hàng, đặc biệt ở chặng cuối.\n→ Ví dụ: Hệ thống machine learning dự đoán tuyến đường ít tắc nghẽn nhất dựa trên lịch sử giao thông và thời gian trong ngày.\n2. Mục đích sử dụng:\n→ Tăng tốc độ giao hàng và giảm chi phí vận hành.\n→ Dự báo chính xác nhu cầu và phân bổ nguồn lực.\n→ Tự động học hỏi từ dữ liệu quá khứ để cải tiến liên tục.\n3. Các bước áp dụng và ví dụ thực tiễn:\n→ Bước 1: Thu thập dữ liệu từ GPS, OMS, TMS, hành vi khách hàng.\n→ Bước 2: Huấn luyện mô hình machine learning với tập dữ liệu lớn.\n→ Bước 3: Triển khai mô hình để đề xuất tuyến đường và phân bổ shipper.\n→ Bước 4: Theo dõi kết quả thực tế và tinh chỉnh mô hình.\n→ Bước 5: Ứng dụng feedback loop để hệ thống học liên tục.\n4. Lưu ý thực tiễn:\n→ Machine learning cần dữ liệu chất lượng cao và đủ lớn.\n→ Sai số có thể xảy ra nếu dữ liệu thiếu hoặc bị nhiễu.\n→ Phải kết hợp với giám sát con người để tránh rủi ro.\n5. Ví dụ minh họa:\n→ Cơ bản: Hệ thống đề xuất shipper tuyến đường ngắn nhất để giao pizza trong 20 phút.\n→ Nâng cao: DHL sử dụng machine learning để tối ưu hóa mạng lưới giao hàng toàn cầu, tiết kiệm hàng trăm triệu USD mỗi năm.\n6. Case Study Mini:\n→ Tình huống: Một startup giao hàng gặp vấn đề vì trễ hẹn giờ cao điểm.\n→ Giải pháp: Ứng dụng machine learning để phân tích dữ liệu giao thông và hành vi mua hàng.\n→ Kết quả: Thời gian giao trung bình giảm 25%, số đơn giao đúng giờ tăng lên 95%.\n7. Câu hỏi kiểm tra nhanh (Quick Quiz):\nĐiểm mạnh nhất của machine learning trong logistics chặng cuối là gì?\n→ a. Tự động học từ dữ liệu và cải tiến hiệu suất ←\n→ b. Không cần dữ liệu\n→ c. Chỉ áp dụng cho nội địa\n→ d. Hoàn toàn thay thế shipper\n8. Câu hỏi tình huống (Scenario-Based Question):\nMột công ty e-commerce muốn giảm tỷ lệ giao thất bại. Theo bạn, họ nên huấn luyện mô hình machine learning dựa trên dữ liệu nào: hành vi khách hàng, thời gian giao hàng, hay tuyến đường giao thông? Vì sao?\n9. Vì sao bạn nên quan tâm đến khái niệm này:\n→ Machine learning giúp logistics trở nên thông minh và tự cải tiến.\n→ Tạo lợi thế cạnh tranh bằng tốc độ và chi phí thấp hơn.\n→ Là bước đệm để tiến tới giao hàng tự động (autonomous delivery).\n10. Ứng dụng thực tế trong công việc:\n→ E-commerce: phân bổ shipper theo nhu cầu.\n→ F&B: dự báo thời gian giao vào giờ cao điểm.\n→ Dược phẩm: dự đoán tuyến đường an toàn nhất.\n→ Logistics đô thị: tối ưu mạng lưới xe giao hàng.\n11. Sai lầm phổ biến khi triển khai:\n→ Thiếu dữ liệu chuẩn hóa để huấn luyện mô hình.\n→ Kỳ vọng kết quả ngay lập tức mà không cho hệ thống học đủ lâu.\n→ Không có cơ chế giám sát và điều chỉnh mô hình.\n12. Đối tượng áp dụng:\n→ Doanh nghiệp logistics, e-commerce, F&B.\n→ Các tập đoàn bán lẻ omni-channel.\n→ Startup phát triển công nghệ logistics thông minh.\n13. Giới thiệu đơn giản dễ hiểu:\nMachine learning trong logistics giống như “bộ não học hỏi” – càng giao nhiều, càng thông minh và tối ưu hơn.\n14. Câu hỏi thường gặp (FAQ):\nQ1 → Machine learning khác gì AI trong logistics?\n→ AI bao trùm nhiều công nghệ, machine learning tập trung vào học từ dữ liệu để cải tiến.\nQ2 → Có cần dữ liệu lớn không?\n→ Có, càng nhiều dữ liệu thì mô hình càng chính xác.\nQ3 → SME có áp dụng được không?\n→ Có, thông qua dịch vụ SaaS machine learning.\nQ4 → Có thể thay thế shipper không?\n→ Chưa, nhưng hỗ trợ mạnh mẽ cho autonomous delivery.\nQ5 → Xu hướng tương lai?\n→ Machine learning tích hợp IoT và blockchain để tạo logistics minh bạch, thông minh.\n15. Gợi ý hỗ trợ:\n→ Gửi email: info@fmit.vn\n→ Nhắn tin Zalo: 0708 25 99 25\n© Bản quyền thuộc về Viện FMIT – Từ điển quản trị chuẩn mực quốc tế"
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/toi-uu-hoa-mang-luoi-qua-4pl-la-gi",
+    "h1": "Network Optimization via 4PL là gì",
+    "h2": "Tối ưu hóa mạng lưới qua 4PL là gì",
+    "content": "1. Định nghĩa:\nTối ưu hóa mạng lưới qua 4PL (Network Optimization via 4PL) là việc sử dụng năng lực quản trị của 4PL kết hợp với công nghệ (AI, Big Data, Digital Twin, IoT) để phân tích, thiết kế và cải tiến mạng lưới logistics toàn cầu (kho, tuyến vận tải, nhà cung cấp) nhằm giảm chi phí, nâng cao SLA, và đáp ứng mục tiêu ESG.\n→ Ví dụ: Một tập đoàn FMCG thuê 4PL để tối ưu mạng lưới phân phối châu Á, từ đó giảm 15% cost-to-serve và cắt giảm CO₂ emissions 20%.\n2. Mục đích sử dụng:\n→ Đảm bảo cấu trúc mạng lưới logistics phù hợp với chiến lược toàn cầu\n→ Giúp procurement có dữ liệu chuẩn để chọn vendor và đàm phán hợp đồng\n→ Cân bằng giữa chi phí – dịch vụ – bền vững\n3. Các bước áp dụng và ví dụ thực tiễn:\nBối cảnh: Một công ty điện tử gặp tình trạng overstock ở EU nhưng stockout ở Mỹ.\n→ Bước 1: Thu thập dữ liệu demand, inventory, vận tải từ toàn bộ 3PL.\n→ Bước 2: Dùng 4PL control tower + digital twin để mô phỏng mạng lưới.\n→ Bước 3: Phân tích nhiều kịch bản (warehouse location, routing).\n→ Bước 4: Đề xuất cấu trúc tối ưu cho procurement và supply chain.\n→ Bước 5: Đo lường KPI: logistics cost, on-time delivery, CO₂ emissions.\n4. Lưu ý thực tiễn:\n→ Network optimization không phải one-time project, cần lặp lại định kỳ\n→ Dữ liệu phải đầy đủ từ demand, vận tải đến ESG footprint\n→ Cần leadership alignment vì tối ưu có thể thay đổi chiến lược sourcing\n5. Ví dụ minh họa:\n→ Cơ bản: 4PL tối ưu số lượng và vị trí kho khu vực.\n→ Nâng cao: 4PL dùng AI tối ưu multi-echelon logistics toàn cầu với nhiều kịch bản.\n6. Case Study Mini:\n→ Tình huống: Một công ty dược phẩm có logistics cost quá cao tại Mỹ Latin.\n→ Giải pháp: 4PL triển khai network optimization bằng digital twin.\n→ Kết quả: Cost giảm 18%, SLA tăng 10%, carbon footprint giảm 25%.\n7. Câu hỏi kiểm tra nhanh (Quick Quiz):\nNetwork Optimization via 4PL giúp đạt mục tiêu gì?\n→ a. Giảm chi phí, tăng SLA và giảm CO₂ trong logistics ←\n→ b. Giảm minh bạch dữ liệu\n→ c. Chỉ áp dụng cho logistics nội địa\n→ d. Loại bỏ nhu cầu 3PL\n8. Câu hỏi tình huống (Scenario-Based Question):\nNếu phân tích cho thấy giảm số kho từ 10 xuống 7 tiết kiệm 20% chi phí nhưng tăng thời gian giao hàng thêm 1 ngày, bạn sẽ: chấp nhận để tiết kiệm, giữ nguyên 10 kho, hay chọn giải pháp hybrid?\n9. Vì sao bạn nên quan tâm đến khái niệm này:\n→ Network optimization là công cụ chiến lược cho procurement và supply chain\n→ Cân bằng cost – service – ESG goals\n→ Giúp doanh nghiệp duy trì resilience khi mở rộng toàn cầu\n10. Ứng dụng thực tế trong công việc:\n→ Procurement planning dựa trên network design\n→ Supplier collaboration để tối ưu multi-3PL\n→ ESG reporting với carbon footprint optimization\n→ Risk management nhờ mô phỏng kịch bản disruption\n11. Sai lầm phổ biến khi triển khai:\n→ Chỉ tập trung cost, bỏ qua SLA và ESG\n→ Không update mô hình định kỳ → tối ưu lỗi thời\n→ Thiếu data governance → insights không chính xác\n12. Đối tượng áp dụng:\n→ Procurement Manager, Supply Chain Director, CPO, Logistics Manager\n→ Áp dụng trong: FMCG, dược phẩm, điện tử, thời trang, logistics toàn cầu\n13. Giới thiệu đơn giản dễ hiểu:\nNetwork Optimization via 4PL giống như “thiết kế lại bản đồ logistics toàn cầu” – để vừa tiết kiệm chi phí, vừa tăng hiệu quả và bền vững.\n14. Câu hỏi thường gặp (FAQ):\nQ1 → 4PL có sở hữu kho không?\n→ Thường không, chỉ quản lý và tối ưu mạng lưới multi-3PL.\nQ2 → Công cụ phổ biến?\n→ Digital twin, AI optimization, SAP IBP, Blue Yonder, AnyLogic.\nQ3 → SMEs có cần network optimization 4PL không?\n→ Có, khi SMEs mở rộng quốc tế hoặc có multi-warehouse.\nQ4 → KPI chính cần theo dõi?\n→ Cost saving %, SLA compliance, CO₂ reduction.\nQ5 → Bao lâu nên review network optimization?\n→ Hàng năm hoặc khi có thay đổi lớn về demand/sourcing.\n15. Gợi ý hỗ trợ:\n→ Gửi email: info@fmit.vn\n→ Nhắn tin Zalo: 0708 25 99 25\n© Bản quyền thuộc về Viện FMIT – Từ điển quản trị chuẩn mực quốc tế"
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/toi-uu-hoa-mang-luoi-toan-cau-la-gi",
+    "h1": "Global Network Optimization là gì",
+    "h2": "Tối ưu hóa mạng lưới toàn cầu là gì",
+    "content": "1. Định nghĩa:\nGlobal Network Optimization là quá trình thiết kế, phân tích và cải tiến mạng lưới chuỗi cung ứng ở quy mô toàn cầu, bao gồm nhà máy, kho bãi, trung tâm phân phối, tuyến vận tải và thị trường tiêu thụ. Mục tiêu là giảm chi phí, tăng hiệu quả dịch vụ và tối ưu vốn lưu động trong toàn bộ mạng lưới quốc tế.\n→ Ví dụ: Một tập đoàn điện tử tối ưu mạng lưới toàn cầu bằng cách chuyển một phần sản xuất từ Trung Quốc sang Việt Nam để giảm chi phí và đa dạng hóa rủi ro.\n2. Mục đích sử dụng:\n→ Giảm chi phí logistics, sản xuất và tồn kho.\n→ Tăng khả năng phục vụ khách hàng toàn cầu.\n→ Giảm rủi ro gián đoạn chuỗi cung ứng.\n3. Các bước áp dụng và ví dụ thực tiễn:\nBối cảnh: Một công ty F&B muốn mở rộng ra thị trường châu Âu.\n→ Bước 1: Thu thập dữ liệu toàn cầu (demand, cost, lead time, trade policies).\n→ Bước 2: Xây dựng mô hình tối ưu mạng lưới.\n→ Bước 3: Đánh giá kịch bản (mở kho mới, thay đổi tuyến vận tải).\n→ Bước 4: Triển khai chiến lược tối ưu mạng lưới.\n→ Bước 5: Đo lường KPI (Total Supply Chain Cost, Service Level, Carbon Footprint).\n4. Lưu ý thực tiễn:\n→ Cần kết hợp yếu tố kinh tế, chính trị và môi trường khi thiết kế mạng lưới.\n→ Không chỉ tối ưu chi phí mà còn tính đến khả năng phục hồi (resilience).\n→ Nên sử dụng công cụ phân tích tiên tiến (AI, simulation, digital twin).\n5. Ví dụ minh họa:\n→ Cơ bản: Một công ty bán lẻ thiết kế lại mạng lưới kho toàn cầu để rút ngắn lead time.\n→ Nâng cao: Một tập đoàn đa quốc gia tối ưu mạng lưới toàn cầu, giảm 18% chi phí logistics và tăng 20% khả năng phục vụ khách hàng.\n6. Case Study Mini:\n→ Tình huống: Một công ty dược phẩm gặp rủi ro khi phụ thuộc vào một quốc gia duy nhất để sản xuất nguyên liệu.\n→ Giải pháp: Thực hiện Global Network Optimization để đa dạng hóa nguồn cung.\n→ Kết quả: Giảm 30% rủi ro gián đoạn và đảm bảo chuỗi cung ứng bền vững.\n7. Câu hỏi kiểm tra nhanh (Quick Quiz):\nGlobal Network Optimization giúp tổ chức đạt điều gì?\n→ a. Giảm chi phí và tăng khả năng phục vụ toàn cầu ←\n→ b. Tăng phụ thuộc vào một quốc gia\n→ c. Giảm minh bạch chuỗi cung ứng\n→ d. Miễn trừ trách nhiệm khi gián đoạn\n8. Câu hỏi tình huống (Scenario-Based Question):\nMột công ty logistics muốn giảm chi phí vận tải quốc tế. Trong Global Network Optimization, họ nên ưu tiên: mở thêm kho khu vực, tối ưu tuyến vận tải hay đa dạng hóa nhà cung cấp?\n9. Vì sao bạn nên quan tâm đến khái niệm này:\n→ Chuỗi cung ứng toàn cầu ngày càng dễ tổn thương.\n→ Tối ưu mạng lưới toàn cầu giúp cân bằng chi phí – dịch vụ – rủi ro.\n→ Là yếu tố chiến lược để cạnh tranh quốc tế.\n10. Ứng dụng thực tế trong công việc:\n→ CEO: định hướng chiến lược toàn cầu.\n→ COO: thiết kế lại mạng lưới logistics.\n→ Supply Chain Manager: tối ưu tồn kho và phân phối.\n→ IBP Manager: tích hợp Global Network Optimization vào IBP.\n11. Sai lầm phổ biến khi triển khai:\n→ Chỉ tập trung giảm chi phí, bỏ qua resilience và ESG.\n→ Không tính đến yếu tố địa chính trị và thuế quan.\n→ Thiếu phân tích kịch bản và dữ liệu chính xác.\n12. Đối tượng áp dụng:\n→ CEO, COO, Supply Chain Manager, Network Designer, IBP Manager.\n→ Áp dụng trong: sản xuất, logistics, bán lẻ, F&B, dược phẩm, công nghệ.\n13. Giới thiệu đơn giản dễ hiểu:\nGlobal Network Optimization giống như “bản đồ chiến lược toàn cầu”, giúp doanh nghiệp biết đặt nhà máy, kho và tuyến vận tải ở đâu để tối ưu chi phí và dịch vụ.\n14. Câu hỏi thường gặp (FAQ):\nQ1 → Có cần digital twin cho Global Network Optimization không?\n→ Có, để mô phỏng kịch bản chính xác hơn.\nQ2 → SME có áp dụng được không?\n→ Có, nhưng ở phạm vi khu vực thay vì toàn cầu.\nQ3 → Có thể tối ưu cả chi phí và ESG cùng lúc không?\n→ Có, bằng cách chọn tuyến vận tải và kho carbon thấp.\nQ4 → Bao lâu nên tối ưu mạng lưới một lần?\n→ 2–3 năm hoặc khi có biến động lớn.\nQ5 → Lợi ích thường thấy là gì?\n→ Giảm 10–25% chi phí và cải thiện đáng kể Service Level.\n15. Gợi ý hỗ trợ:\n→ Gửi email: info@fmit.vn\n→ Nhắn tin Zalo: 0708 25 99 25\n© Bản quyền thuộc về Viện FMIT – Từ điển quản trị chuẩn mực quốc tế"
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/toi-uu-muc-do-phuc-vu-ton-kho-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/toi-uu-quy-trinh-trai-nghiem-khach-hang-la-gi",
+    "h1": "CX Process Optimization là gì",
+    "h2": "Tối ưu Quy trình Trải nghiệm Khách hàng là gì",
+    "content": "Định nghĩa:\nTối ưu Quy trình Trải nghiệm Khách hàng (CX Process Optimization) là quá trình phân tích, cải tiến và chuẩn hóa các quy trình liên quan đến trải nghiệm khách hàng nhằm nâng cao hiệu quả, giảm thời gian xử lý và tăng sự hài lòng của khách hàng.\n→ Ví dụ: Một công ty dịch vụ viễn thông cải tiến quy trình đăng ký gói cước, rút ngắn thời gian chờ đợi và giảm số bước cần thực hiện.\nMục đích sử dụng:\n→ Giảm thời gian xử lý và chi phí vận hành liên quan đến trải nghiệm khách hàng.\n→ Cải thiện sự hài lòng, gắn kết và trung thành của khách hàng.\n→ Đảm bảo quy trình CX liền mạch, chuẩn hóa và hiệu quả.\nCác bước áp dụng và ví dụ thực tiễn:\nBối cảnh: Một công ty fintech muốn tối ưu quy trình mở tài khoản khách hàng.\n→ Bước 1: Phân tích toàn bộ hành trình khách hàng từ đăng ký đến sử dụng dịch vụ.\n→ Bước 2: Xác định điểm nghẽn, bước dư thừa hoặc phức tạp.\n→ Bước 3: Thiết kế lại quy trình, loại bỏ bước thừa, tích hợp tự động hóa.\n→ Bước 4: Triển khai và đào tạo nhân sự thực hiện quy trình mới.\n→ Bước 5: Theo dõi hiệu quả qua KPI như thời gian xử lý, tỷ lệ lỗi và phản hồi khách hàng.\nLưu ý thực tiễn:\n→ Quy trình cần được tối ưu liên tục theo phản hồi khách hàng và dữ liệu vận hành.\n→ Tích hợp công nghệ như CRM, automation, chatbot để giảm lỗi và tăng tốc.\n→ Phối hợp giữa các bộ phận CX, vận hành, IT và nhân sự để triển khai hiệu quả.\nVí dụ minh họa:\n→ Cơ bản: Rút ngắn thời gian xử lý đơn hàng từ 5 ngày xuống 2 ngày.\n→ Nâng cao: Tích hợp CRM, tự động hóa email thông báo và chatbot hỗ trợ khách hàng, giảm lỗi nhập liệu và tăng trải nghiệm liền mạch.\nCase Study Mini:\n→ Tình huống: Khách hàng phàn nàn về thời gian xử lý yêu cầu hỗ trợ quá lâu.\n→ Giải pháp: Tối ưu quy trình, triển khai chatbot và tự động hóa phân luồng yêu cầu.\n→ Kết quả: Giảm thời gian xử lý 50%, tăng CSAT 35% và NPS cải thiện rõ rệt.\nCâu hỏi kiểm tra nhanh (Quick Quiz):\nCX Process Optimization giúp doanh nghiệp đạt điều gì?\n→ a. Tối ưu quy trình, giảm thời gian và nâng cao trải nghiệm khách hàng ←\n→ b. Giảm chi phí sản xuất\n→ c. Chỉ tập trung marketing\n→ d. Loại bỏ phản hồi khách hàng\nCâu hỏi tình huống (Scenario-Based Question):\nMột công ty dịch vụ nhận nhiều phản hồi về quy trình đăng ký rườm rà. Họ nên tối ưu quy trình CX như thế nào để cải thiện trải nghiệm khách hàng?\nVì sao bạn nên quan tâm đến khái niệm này:\n→ Tối ưu quy trình giúp giảm chi phí, tăng tốc độ phục vụ và nâng cao hài lòng khách hàng.\n→ Hỗ trợ tạo trải nghiệm liền mạch và hiệu quả, tăng sự gắn kết và trung thành.\n→ Cải thiện hiệu quả vận hành nội bộ và tối ưu nguồn lực.\nỨng dụng thực tế trong công việc:\n→ CX Manager: Phân tích và thiết kế quy trình CX.\n→ Operations Team: Triển khai quy trình mới và theo dõi hiệu quả.\n→ IT & Automation Team: Tích hợp công nghệ để tối ưu quy trình.\n→ Support Team: Thực hiện quy trình tối ưu và thu thập phản hồi khách hàng.\nSai lầm phổ biến khi triển khai:\n→ Không phân tích kỹ hành trình khách hàng trước khi tối ưu.\n→ Triển khai quy trình mới mà không đào tạo nhân sự.\n→ Không đo lường hiệu quả và cải tiến liên tục.\nĐối tượng áp dụng:\n→ CX Manager, Operations Lead, IT & Automation Team, Support Team.\n→ Áp dụng trong: bán lẻ, dịch vụ, fintech, du lịch, giải trí, bất động sản.\nGiới thiệu đơn giản dễ hiểu:\nCX Process Optimization là “cải tiến và tối ưu hóa các bước trong hành trình khách hàng để giảm thời gian, tăng hiệu quả và nâng cao trải nghiệm.”\nCâu hỏi thường gặp (FAQ):\nQ1 → Có áp dụng tối ưu quy trình cho app không?\n→ Có, để giảm bước rườm rà và tăng trải nghiệm người dùng.\nQ2 → Làm sao đo hiệu quả?\n→ Qua thời gian xử lý, CSAT, NPS và tỷ lệ lỗi.\nQ3 → Yếu tố quan trọng nhất?\n→ Phân tích dữ liệu khách hàng, tự động hóa và đồng bộ hóa quy trình.\nQ4 → Công nghệ hỗ trợ là gì?\n→ CRM, workflow automation, chatbot, dashboard phân tích dữ liệu.\nQ5 → Phạm vi áp dụng?\n→ Từ bán lẻ, dịch vụ, fintech, du lịch, giải trí đến bất động sản.\nGợi ý hỗ trợ:\n→ Gửi email: info@fmit.vn\n→ Nhắn tin Zalo: 0708 25 99 25\n© Bản quyền thuộc về Viện FMIT – Từ điển quản trị chuẩn mực quốc tế"
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tom-tat-ke-hoach-lien-tuc-kinh-doanh-theo-don-vi-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tom-tat-nhat-ky-su-kien-tham-hoa-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/ton-kho-dau-co-la-gi",
+    "h1": "Speculative inventory là gì",
+    "h2": "Tồn kho đầu cơ là gì",
+    "content": "Định nghĩa:\nSpeculative inventory (tồn kho đầu cơ) là chiến lược dự trữ hàng hóa với kỳ vọng rằng giá trị của chúng sẽ tăng lên trong tương lai, hoặc với hy vọng tận dụng các cơ hội cung ứng trong thời gian ngắn. Chiến lược này thường được sử dụng trong các thị trường có sự biến động giá cao hoặc tình trạng thiếu hụt nguồn cung.\n→ Ví dụ: Một công ty sản xuất ô tô dự trữ một lượng lớn linh kiện xe hơi với kỳ vọng rằng giá của các linh kiện này sẽ tăng do sự thiếu hụt nguồn cung trong tương lai.\nMục đích sử dụng:\n→ Đảm bảo doanh nghiệp có thể tận dụng sự biến động của thị trường để gia tăng lợi nhuận khi giá tăng.\n→ Giảm thiểu rủi ro thiếu hụt nguồn cung khi có sự gián đoạn trong chuỗi cung ứng.\n→ Đảm bảo rằng công ty có thể duy trì hoạt động mà không bị gián đoạn do thay đổi đột ngột trong thị trường.\nCác bước áp dụng và ví dụ thực tiễn:\nBối cảnh: Một công ty dược phẩm nhận thấy rằng giá nguyên liệu sản xuất thuốc có thể tăng trong tương lai do sự thiếu hụt nguồn cung.\n→ Bước 1: Phân tích xu hướng giá của nguyên liệu trong thời gian gần đây và dự đoán biến động giá trong tương lai.\n→ Bước 2: Quyết định dự trữ một số lượng lớn nguyên liệu dựa trên dự báo giá sẽ tăng.\n→ Bước 3: Mua hàng khi giá thấp và bảo vệ lợi nhuận khi giá tăng cao hơn dự kiến.\n→ Bước 4: Theo dõi liên tục tình hình cung ứng và thị trường để điều chỉnh kế hoạch khi cần thiết.\n→ Bước 5: Đánh giá kết quả và điều chỉnh chiến lược tồn kho đầu cơ trong các giai đoạn tiếp theo.\nLưu ý thực tiễn:\n→ Tồn kho đầu cơ có thể dẫn đến rủi ro tài chính nếu giá không thay đổi theo kỳ vọng, vì vậy cần có các biện pháp bảo vệ như hợp đồng tương lai hoặc bảo hiểm hàng hóa.\n→ Cần có sự phân tích thị trường kỹ lưỡng và liên tục để đảm bảo quyết định đầu cơ được đưa ra đúng đắn.\n→ Quản lý tồn kho đầu cơ đòi hỏi phải có vốn lớn và khả năng chịu đựng rủi ro từ các biến động giá.\nVí dụ minh họa:\n→ Cơ bản: Một công ty bán lẻ dự trữ một lượng lớn hàng điện tử khi thấy thị trường có dấu hiệu thiếu hụt sản phẩm trong mùa lễ.\n→ Nâng cao: Một công ty dầu khí mua trước lượng lớn dầu thô khi dự đoán giá dầu sẽ tăng do tình trạng bất ổn chính trị tại các khu vực sản xuất chính.\nCase Study Mini:\n→ Tình huống: Một công ty may mặc dự trữ vải khi giá vải dự báo sẽ tăng do sự thiếu hụt nguyên liệu.\n→ Giải pháp: Công ty quyết định mua số lượng vải lớn trước khi giá tăng.\n→ Kết quả: Công ty giảm được chi phí nguyên liệu và tăng lợi nhuận khi giá vải tăng lên.\nCâu hỏi kiểm tra nhanh (Quick Quiz):\nTồn kho đầu cơ có thể giúp tổ chức đạt được điều gì?\n→ a. Tăng lợi nhuận khi giá tăng ←\n→ b. Giảm thiểu mọi chi phí liên quan đến tồn kho\n→ c. Loại bỏ rủi ro gián đoạn chuỗi cung ứng\n→ d. Tăng chi phí lưu kho mà không mang lại lợi ích\nCâu hỏi tình huống (Scenario-Based Question):\nMột công ty sản xuất linh kiện điện tử nhận thấy giá nguyên liệu đầu vào có thể tăng mạnh trong thời gian tới. Nếu áp dụng chiến lược tồn kho đầu cơ, họ nên lưu ý những yếu tố gì để giảm thiểu rủi ro tài chính?\nVì sao bạn nên quan tâm đến khái niệm này:\n→ Tồn kho đầu cơ giúp doanh nghiệp tận dụng sự biến động của thị trường, nhưng cũng cần được áp dụng một cách thận trọng để giảm thiểu rủi ro.\n→ Là một chiến lược giúp duy trì lợi nhuận trong các thị trường có sự biến động mạnh và không ổn định.\n→ Cung cấp sự bảo vệ trước những rủi ro thiếu hụt nguồn cung và biến động giá nguyên liệu trong tương lai.\nỨng dụng thực tế trong công việc:\n→ Quản lý chuỗi cung ứng: dự trữ nguyên liệu hoặc sản phẩm khi dự đoán sự thiếu hụt nguồn cung.\n→ Quản lý tài chính: sử dụng chiến lược đầu cơ để bảo vệ lợi nhuận trong điều kiện biến động giá.\n→ Quản lý sản xuất: tối ưu hóa kế hoạch sản xuất và dự báo nhu cầu trong các giai đoạn biến động.\nSai lầm phổ biến khi triển khai:\n→ Không đánh giá chính xác các yếu tố ảnh hưởng đến giá trị của hàng hóa, dẫn đến việc dự trữ quá nhiều hoặc quá ít.\n→ Đầu cơ quá nhiều vào một mặt hàng duy nhất, tạo ra rủi ro cao khi dự báo không chính xác.\n→ Không theo dõi thị trường và tình hình cung ứng định kỳ, dẫn đến việc dự trữ không hiệu quả.\nĐối tượng áp dụng:\n→ Giám đốc tài chính, quản lý chuỗi cung ứng, giám đốc sản xuất.\n→ Các doanh nghiệp trong ngành sản xuất, năng lượng, bán lẻ và tài chính.\nGiới thiệu đơn giản dễ hiểu:\nTồn kho đầu cơ giống như việc \"đặt cược\" vào sự thay đổi của thị trường – bạn mua hàng khi giá thấp và kỳ vọng bán ra khi giá cao, từ đó đạt được lợi nhuận từ sự biến động của giá cả.\nCâu hỏi thường gặp (FAQ):\nQ1 → Tồn kho đầu cơ có rủi ro gì không?\n→ Có, nếu dự báo sai, bạn có thể gặp phải tình trạng dư thừa hàng hóa và chi phí lưu kho cao.\nQ2 → Tồn kho đầu cơ có phải lúc nào cũng là chiến lược tốt không?\n→ Không, chỉ nên áp dụng trong các tình huống thị trường có sự biến động mạnh và có thể dự đoán được.\nQ3 → Làm thế nào để giảm rủi ro khi áp dụng tồn kho đầu cơ?\n→ Nên sử dụng công cụ bảo vệ như hợp đồng tương lai, phân tích kỹ lưỡng và điều chỉnh kế hoạch định kỳ.\nQ4 → Có nên áp dụng tồn kho đầu cơ cho tất cả các loại hàng hóa không?\n→ Không, chỉ nên áp dụng cho những mặt hàng có sự biến động giá lớn và có khả năng dự đoán được.\nQ5 → Tồn kho đầu cơ có ảnh hưởng đến dòng tiền không?\n→ Có, việc dự trữ hàng hóa với số lượng lớn có thể làm \"đóng băng\" một phần vốn của công ty.\nGợi ý hỗ trợ:\n→ Gửi email: info@fmit.vn\n→ Nhắn tin Zalo: 0708 25 99 25\n© Bản quyền thuộc về Viện FMIT – Từ điển quản trị chuẩn mực quốc tế"
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tong-hop-du-bao-tu-phong-van-co-cau-truc-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trach-nhiem-giai-trinh-trong-quan-tri-dam-may-la-gi",
+    "h1": "Cloud Governance Accountability là gì",
+    "h2": "Trách nhiệm giải trình trong quản trị đám mây là gì",
+    "content": "1. Định nghĩa:\nTrách nhiệm giải trình trong quản trị đám mây (Cloud Governance Accountability) là cơ chế đảm bảo mỗi cá nhân hoặc bộ phận liên quan đến việc triển khai, quản lý và vận hành môi trường cloud phải chịu trách nhiệm rõ ràng về các quyết định, hành động và kết quả liên quan, đồng thời có thể giải trình khi được yêu cầu.\n→ Ví dụ: Bộ phận bảo mật cloud phải giải trình về nguyên nhân và biện pháp khắc phục sau một sự cố rò rỉ dữ liệu trên nền tảng AWS.\n2. Mục đích sử dụng:\n→ Xác định rõ trách nhiệm để tránh chồng chéo hoặc bỏ sót nhiệm vụ\n→ Nâng cao tính minh bạch và khả năng kiểm soát trong quản trị cloud\n→ Tăng cường tuân thủ và giảm thiểu rủi ro pháp lý, bảo mật\n3. Các bước áp dụng và ví dụ thực tiễn:\nBối cảnh: Một tập đoàn đa quốc gia triển khai multi-cloud và cần quản lý trách nhiệm giải trình rõ ràng.\n→ Bước 1: Xác định tất cả các hoạt động và quyết định quan trọng liên quan đến cloud\n→ Bước 2: Gán trách nhiệm cụ thể cho từng vai trò hoặc bộ phận\n→ Bước 3: Thiết lập cơ chế báo cáo và theo dõi kết quả\n→ Bước 4: Xây dựng quy trình xử lý khi vi phạm hoặc không đạt yêu cầu\n→ Bước 5: Đánh giá định kỳ hiệu quả thực hiện trách nhiệm giải trình\n4. Lưu ý thực tiễn:\n→ Trách nhiệm giải trình phải được ghi rõ trong chính sách và hợp đồng nội bộ\n→ Cần kết hợp với KPI và chỉ số hiệu quả để đánh giá khách quan\n→ Không chỉ áp dụng khi có sự cố, mà phải duy trì thường xuyên\n5. Ví dụ minh họa:\n→ Cơ bản: Ghi nhận trách nhiệm của từng nhóm trong việc quản lý quyền truy cập cloud\n→ Nâng cao: Tích hợp trách nhiệm giải trình vào hệ thống quản trị rủi ro doanh nghiệp (ERM)\n6. Case Study Mini:\n→ Tình huống: Một công ty fintech gặp sự cố mất dữ liệu khách hàng trên cloud do lỗi cấu hình bảo mật\n→ Giải pháp: Xác định rõ bộ phận DevOps chịu trách nhiệm cấu hình, áp dụng quy trình xác minh và phê duyệt thay đổi\n→ Kết quả: Giảm 50% số lỗi cấu hình sai trong vòng 6 tháng\n7. Câu hỏi kiểm tra nhanh (Quick Quiz):\nTrách nhiệm giải trình trong quản trị cloud giúp tổ chức:\n→ a. Xác định rõ ai chịu trách nhiệm và nâng cao tính minh bạch ←\n→ b. Loại bỏ hoàn toàn rủi ro bảo mật\n→ c. Giảm nhu cầu giám sát\n→ d. Chỉ áp dụng cho tổ chức lớn\n8. Câu hỏi tình huống (Scenario-Based Question):\nNếu một sự cố bảo mật cloud xảy ra nhưng không rõ ai chịu trách nhiệm, bạn sẽ thiết lập cơ chế nào để tránh tình trạng này tái diễn?\n9. Vì sao bạn nên quan tâm đến khái niệm này:\n→ Giúp duy trì kỷ luật và trách nhiệm trong quản trị cloud\n→ Là yếu tố quan trọng để đạt các tiêu chuẩn tuân thủ quốc tế\n10. Ứng dụng thực tế trong công việc:\n→ Ban lãnh đạo: phê duyệt cơ chế trách nhiệm giải trình và giám sát thực hiện\n→ Bộ phận CNTT & bảo mật: thực hiện và báo cáo định kỳ\n→ Bộ phận kiểm toán: đánh giá và xác minh tính tuân thủ\n11. Sai lầm phổ biến khi triển khai:\n→ Không ghi nhận trách nhiệm rõ ràng trong tài liệu chính thức\n→ Chỉ áp dụng trách nhiệm giải trình khi xảy ra sự cố\n→ Không có quy trình xử lý khi trách nhiệm bị vi phạm\n12. Đối tượng áp dụng:\n→ Dành cho: CIO, CISO, CEO, Quản lý hạ tầng, Quản lý rủi ro, Bộ phận pháp chế\n→ Áp dụng trong: quản trị chiến lược cloud, bảo mật, tuân thủ và kiểm toán\n13. Giới thiệu đơn giản dễ hiểu:\nTrách nhiệm giải trình trong quản trị đám mây giống như “bảng phân công công việc” có chữ ký xác nhận, để khi có vấn đề, mọi người biết rõ ai chịu trách nhiệm và phải báo cáo ra sao.\n14. Câu hỏi thường gặp:\nQ1 → Có nên gắn trách nhiệm giải trình với KPI cá nhân không?\n→ Có, để khuyến khích thực hiện nghiêm túc\nQ2 → Bao lâu nên rà soát lại trách nhiệm giải trình?\n→ Ít nhất mỗi năm hoặc khi thay đổi cơ cấu tổ chức\nQ3 → Trách nhiệm giải trình có cần công cụ hỗ trợ không?\n→ Có, để ghi nhận và theo dõi tiến độ, nhất là với môi trường multi-cloud\n15. Gợi ý hỗ trợ:\n→ Gửi email: info@fmit.vn\n→ Nhắn tin Zalo: 0708 25 99 25\n© Bản quyền thuộc về Viện FMIT – Từ điển quản trị chuẩn mực quốc tế"
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trach-nhiem-so-huu-du-bao-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tri-nho-rui-ro-la-gi",
+    "h1": "Risk Memory là gì",
+    "h2": "Trí nhớ rủi ro là gì",
+    "content": "1. Định nghĩa:\nRisk Memory (Trí nhớ rủi ro) là khả năng lưu giữ, ghi nhận và truyền lại kinh nghiệm từ các sự kiện rủi ro trong quá khứ của cá nhân hoặc tổ chức, nhằm giúp phòng ngừa, giảm thiểu và ứng phó hiệu quả hơn với rủi ro trong tương lai.\n→ Ví dụ: Sau khủng hoảng tài chính 2008, nhiều ngân hàng xây dựng bộ nhớ rủi ro tổ chức để tránh lặp lại các sai lầm trong quản trị tín dụng.\n2. Mục đích sử dụng:\n→ Ngăn chặn việc lặp lại các sai lầm cũ\n→ Lưu giữ và truyền tải kinh nghiệm rủi ro qua các thế hệ nhân sự\n→ Hỗ trợ xây dựng hệ thống quản trị rủi ro bền vững, có chiều sâu lịch sử\n3. Các bước áp dụng và ví dụ thực tiễn:\nBối cảnh: Một tập đoàn sản xuất muốn duy trì kinh nghiệm rủi ro qua nhiều thế hệ lãnh đạo\n→ Bước 1: Thu thập dữ liệu về các sự cố rủi ro đã xảy ra (báo cáo, phân tích, câu chuyện nội bộ)\n→ Bước 2: Xây dựng cơ chế lưu trữ (cơ sở dữ liệu, hồ sơ điện tử, case study)\n→ Bước 3: Tích hợp vào quy trình đào tạo và huấn luyện nhân sự mới\n→ Bước 4: Sử dụng trí nhớ rủi ro trong ra quyết định chiến lược\n→ Bước 5: Cập nhật và bổ sung liên tục khi có sự kiện rủi ro mới\n4. Lưu ý thực tiễn:\n→ Trí nhớ rủi ro phải chính xác, không bị bóp méo bởi cảm xúc hoặc định kiến\n→ Không chỉ lưu giữ dữ liệu, mà cần biến thành tri thức có thể hành động\n→ Tránh “trí nhớ rủi ro ngắn hạn” – quên nhanh sự cố khi tình hình ổn định trở lại\n5. Ví dụ minh họa:\n→ Cơ bản: Một doanh nghiệp lưu giữ báo cáo sự cố an toàn lao động để đào tạo nhân viên mới\n→ Nâng cao: Một tổ chức toàn cầu phát triển “Risk Memory Platform” để chia sẻ kinh nghiệm rủi ro xuyên quốc gia và xuyên ngành\n6. Case Study Mini:\n→ Tình huống: Một hãng hàng không gặp tai nạn nhỏ do lỗi vận hành, nhưng không lưu giữ thông tin đầy đủ → sự cố tương tự lặp lại sau vài năm\n→ Giải pháp: Xây dựng hệ thống Risk Memory tập trung, bắt buộc mọi sự cố phải được ghi nhận và phân tích\n→ Kết quả: Giảm 60% sự cố lặp lại trong vòng 3 năm\n7. Câu hỏi kiểm tra nhanh (Quick Quiz):\nRisk Memory giúp tổ chức đạt điều gì?\n→ a. Lưu giữ và truyền lại kinh nghiệm rủi ro để phòng ngừa tương lai ←\n→ b. Loại bỏ hoàn toàn mọi rủi ro\n→ c. Thay thế nhu cầu đào tạo nhân sự\n→ d. Ngăn chặn sự sáng tạo trong tổ chức\n8. Câu hỏi tình huống (Scenario-Based Question):\nMột startup thương mại điện tử gặp sự cố hệ thống nhiều lần vì không rút kinh nghiệm từ sự cố trước. Nếu áp dụng Risk Memory, họ nên xây dựng cơ chế nào để tránh lặp lại lỗi cũ?\n9. Vì sao bạn nên quan tâm đến khái niệm này:\n→ Trí nhớ rủi ro là tài sản vô hình giúp tổ chức mạnh hơn sau mỗi khủng hoảng\n→ Thiếu trí nhớ rủi ro đồng nghĩa với việc lặp lại sai lầm, gây lãng phí và tổn thất lớn\n10. Ứng dụng thực tế trong công việc:\n→ Quản trị dự án: ghi nhận bài học rủi ro trong sổ tay dự án\n→ Nhân sự: tích hợp Risk Memory vào chương trình onboarding\n→ Lãnh đạo chiến lược: sử dụng dữ liệu lịch sử rủi ro để dự báo và lập kế hoạch\n11. Sai lầm phổ biến khi triển khai:\n→ Chỉ ghi nhận mà không phân tích nguyên nhân và bài học\n→ Để dữ liệu phân tán, không có hệ thống tập trung\n→ Không lan tỏa kiến thức, khiến trí nhớ rủi ro không vượt ra ngoài một nhóm nhỏ\n12. Đối tượng áp dụng:\n→ Dành cho: CEO, Risk Manager, Project Manager, Internal Auditor\n→ Áp dụng trong: quản trị rủi ro, quản trị chiến lược, đào tạo nhân sự, quản lý vận hành\n13. Giới thiệu đơn giản dễ hiểu:\nRisk Memory giống như “bộ não tập thể của tổ chức” – nơi lưu giữ mọi kinh nghiệm rủi ro để không ai phải trả giá cho cùng một sai lầm hai lần.\n14. Câu hỏi thường gặp:\nQ1 → Risk Memory có khác gì Lessons Learned không?\n→ Có. Lessons Learned thường áp dụng cho dự án cụ thể, Risk Memory mang tính hệ thống và lâu dài.\nQ2 → Có cần công nghệ hỗ trợ không?\n→ Có, hệ thống cơ sở dữ liệu và nền tảng tri thức giúp tăng hiệu quả.\nQ3 → Có nguy cơ bị quên đi không?\n→ Có, nếu tổ chức không có cơ chế lưu trữ và truyền đạt chính thức.\nQ4 → Có nên chia sẻ Risk Memory với đối tác không?\n→ Có thể, nếu tăng tính minh bạch và xây dựng niềm tin.\n15. Gợi ý hỗ trợ:\n→ Gửi email: info@fmit.vn\n→ Nhắn tin Zalo: 0708 25 99 25\n© Bản quyền thuộc về Viện FMIT – Từ điển quản trị chuẩn mực quốc tế"
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tri-tue-nhan-tao-trong-giam-sat-sdg-la-gi",
+    "h1": "AI in SDG monitoring là gì",
+    "h2": "Trí tuệ nhân tạo trong giám sát SDG là gì",
+    "content": "1. Định nghĩa:\nTrí tuệ nhân tạo trong giám sát SDG (AI in SDG monitoring) là việc ứng dụng các công nghệ AI để thu thập, phân tích và dự đoán dữ liệu liên quan đến 17 Mục tiêu Phát triển Bền vững (SDGs), từ đó giúp tổ chức đánh giá tiến độ và đưa ra quyết định kịp thời.\n→ Ví dụ: Sử dụng AI xử lý hình ảnh vệ tinh để giám sát nạn phá rừng trong SDG 15 – Hệ sinh thái trên cạn.\n2. Mục đích sử dụng:\n→ Nâng cao độ chính xác và hiệu quả trong việc giám sát SDGs.\n→ Giảm chi phí, tiết kiệm thời gian so với phương pháp thủ công.\n→ Tạo khả năng dự đoán và cảnh báo sớm rủi ro bền vững.\n3. Các bước áp dụng và ví dụ thực tiễn:\nBối cảnh: Một tổ chức phi chính phủ muốn giám sát chất lượng nước sạch (SDG 6).\n→ Bước 1: Thu thập dữ liệu từ cảm biến IoT, vệ tinh, nguồn mở.\n→ Bước 2: Sử dụng AI phân tích dữ liệu lớn (big data) để phát hiện bất thường.\n→ Bước 3: Xây dựng dashboard theo dõi theo thời gian thực.\n→ Bước 4: Đưa ra cảnh báo và khuyến nghị cho các bên liên quan.\n→ Bước 5: Liên tục huấn luyện mô hình để cải thiện độ chính xác.\n4. Lưu ý thực tiễn:\n→ Dữ liệu đầu vào phải đủ lớn và chất lượng cao.\n→ Cần tính đến yếu tố đạo đức trong AI (AI ethics).\n→ AI chỉ hỗ trợ, không thể thay thế hoàn toàn con người.\n5. Ví dụ minh họa:\n→ Cơ bản: AI phân tích khảo sát trực tuyến để đánh giá mức độ hài lòng của cộng đồng về giáo dục (SDG 4).\n→ Nâng cao: AI kết hợp dữ liệu vệ tinh và blockchain để giám sát chuỗi cung ứng nông nghiệp bền vững.\n6. Case Study Mini:\n→ Tình huống: Một thành phố châu Á gặp khó khăn trong quản lý rác thải.\n→ Giải pháp: Sử dụng AI nhận dạng hình ảnh để phân loại rác tự động, liên kết với mục tiêu SDG 12.\n→ Kết quả: Giảm 35% chi phí xử lý rác và tăng tỷ lệ tái chế.\n7. Câu hỏi kiểm tra nhanh (Quick Quiz):\nAI trong giám sát SDGs giúp tổ chức đạt điều gì?\n→ a. Giám sát chính xác và dự đoán rủi ro ←\n→ b. Loại bỏ nhu cầu thu thập dữ liệu\n→ c. Thay thế hoàn toàn nhân sự quản lý\n→ d. Giảm tính minh bạch trong báo cáo\n8. Câu hỏi tình huống (Scenario-Based Question):\nMột startup năng lượng tái tạo muốn theo dõi hiệu quả giảm phát thải (SDG 13). Họ nên ứng dụng AI ở giai đoạn nào: thu thập dữ liệu từ cảm biến, phân tích phát thải, hay dự báo xu hướng?\n9. Vì sao bạn nên quan tâm đến khái niệm này:\n→ AI giúp tăng tốc độ và hiệu quả giám sát SDGs.\n→ Giúp tổ chức ra quyết định nhanh và chính xác hơn.\n→ Là công cụ cạnh tranh khi nhà đầu tư ESG ngày càng yêu cầu minh bạch dữ liệu.\n10. Ứng dụng thực tế trong công việc:\n→ Phòng bền vững: dùng AI phân tích dữ liệu ESG.\n→ Risk Manager: cảnh báo sớm rủi ro môi trường – xã hội.\n→ Công nghệ: triển khai AI/ML trong phân tích dữ liệu lớn.\n→ Truyền thông: cung cấp báo cáo minh bạch dựa trên dữ liệu AI.\n11. Sai lầm phổ biến khi triển khai:\n→ Phụ thuộc hoàn toàn vào AI mà bỏ qua phân tích con người.\n→ Dữ liệu không đủ chất lượng nhưng vẫn đưa vào mô hình.\n→ Bỏ qua yếu tố đạo đức và quyền riêng tư.\n12. Đối tượng áp dụng:\n→ CEO, CSO, Data Scientist, Risk Manager, Sustainability Officer.\n→ Áp dụng trong: giám sát môi trường, y tế công cộng, giáo dục, năng lượng, quản lý chuỗi cung ứng.\n13. Giới thiệu đơn giản dễ hiểu:\nAI trong giám sát SDG giống như “cặp mắt thông minh” giúp tổ chức nhìn thấy chi tiết và dự đoán xu hướng trong hành trình phát triển bền vững.\n14. Câu hỏi thường gặp (FAQ):\nQ1 → AI có thay thế con người trong giám sát SDG không?\n→ Không, chỉ hỗ trợ ra quyết định.\nQ2 → Cần bao nhiêu dữ liệu để áp dụng AI?\n→ Càng nhiều và chất lượng cao càng tốt.\nQ3 → SME có thể dùng AI cho SDG không?\n→ Có, nhờ các nền tảng AI sẵn có, chi phí thấp.\nQ4 → AI có đáng tin cậy không?\n→ Phụ thuộc vào chất lượng dữ liệu và mô hình.\nQ5 → Có cần kết hợp AI với blockchain không?\n→ Có thể, để tăng tính minh bạch và truy xuất dữ liệu.\n15. Gợi ý hỗ trợ:\n→ Gửi email: info@fmit.vn\n→ Nhắn tin Zalo: 0708 25 99 25\n© Bản quyền thuộc về Viện FMIT – Từ điển quản trị chuẩn mực quốc tế"
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trien-khai-chinh-sach-trong-quan-ly-chuoi-cung-ung-tinh-gon-la-gi",
+    "h1": "policy deployment lean scm là gì",
+    "h2": "triển khai chính sách trong quản lý chuỗi cung ứng tinh gọn là gì",
+    "content": "1. Định nghĩa:\nTriển khai chính sách trong quản lý chuỗi cung ứng tinh gọn (Policy Deployment Lean SCM) là quy trình áp dụng và truyền đạt các chính sách, mục tiêu và chiến lược của tổ chức đến toàn bộ chuỗi cung ứng, dựa trên nguyên tắc Lean để đảm bảo hiệu quả, đồng bộ và minh bạch.\n→ Ví dụ: Một công ty sản xuất áp dụng Hoshin Kanri để triển khai mục tiêu giảm lãng phí và tối ưu chi phí tới tất cả nhà máy, kho bãi và đội ngũ logistics.\n2. Mục đích sử dụng:\n→ Đồng bộ mục tiêu và chính sách từ cấp lãnh đạo đến từng bộ phận trong chuỗi.\n→ Đảm bảo tuân thủ tiêu chuẩn, giảm lãng phí và tối ưu hiệu quả vận hành.\n→ Hỗ trợ cải tiến liên tục và ra quyết định nhanh.\n3. Các bước áp dụng và ví dụ thực tiễn:\nBối cảnh: Một doanh nghiệp muốn triển khai chiến lược Lean trong toàn chuỗi cung ứng.\n→ Bước 1: Xác định mục tiêu chiến lược và chính sách của tổ chức.\n→ Bước 2: Truyền đạt chính sách tới các bộ phận, nhà máy và nhà cung cấp thông qua hệ thống KPI và quy trình chuẩn.\n→ Bước 3: Triển khai các dự án Lean cụ thể phù hợp với mục tiêu chính sách.\n→ Bước 4: Theo dõi KPI: lãng phí, chi phí, hiệu suất vận hành và độ tuân thủ.\n→ Bước 5: Cải tiến liên tục dựa trên kết quả và phản hồi từ toàn chuỗi.\n4. Lưu ý thực tiễn:\n→ Đảm bảo mọi cấp trong chuỗi hiểu rõ mục tiêu và chính sách.\n→ Cập nhật chính sách khi có thay đổi chiến lược hoặc môi trường kinh doanh.\n→ Kết hợp Lean với công nghệ quản lý và hệ thống KPI.\n5. Ví dụ minh họa:\n→ Cơ bản: Truyền đạt mục tiêu giảm tồn kho và chi phí tới bộ phận kho và vận chuyển.\n→ Nâng cao: Sử dụng Hoshin Kanri kết hợp KPI và hệ thống ERP để giám sát triển khai chính sách toàn chuỗi.\n6. Case study mini:\n→ Tình huống: Một công ty FMCG gặp khó khăn trong việc triển khai mục tiêu Lean đến các nhà máy và nhà cung cấp.\n→ Giải pháp: Áp dụng Policy Deployment Lean SCM, thiết lập KPI, truyền đạt mục tiêu và triển khai dự án cải tiến Lean.\n→ Kết quả: Giảm tồn kho 15%, tăng hiệu suất vận hành 18%, nâng cao mức độ tuân thủ chính sách.\n7. Câu hỏi kiểm tra nhanh (quick quiz):\nMục tiêu chính của Policy Deployment Lean SCM là gì?\n→ a. Làm việc riêng lẻ\n→ b. Đồng bộ mục tiêu, giảm lãng phí và tối ưu hiệu quả chuỗi ←\n→ c. Tăng tồn kho\n→ d. Giảm tốc độ vận hành\n8. Câu hỏi tình huống (scenario-based question):\nNếu các bộ phận và nhà cung cấp không thực hiện đúng mục tiêu Lean, bạn sẽ triển khai Policy Deployment Lean SCM như thế nào để đồng bộ và cải thiện hiệu quả?\n9. Vì sao bạn nên quan tâm đến khái niệm này:\n→ Giúp triển khai chiến lược Lean hiệu quả và đồng bộ toàn chuỗi.\n→ Giảm lãng phí, tăng hiệu suất và nâng cao mức độ tuân thủ.\n→ Hỗ trợ ra quyết định nhanh và cải tiến liên tục.\n10. Ứng dụng thực tế trong công việc:\n→ Truyền đạt chính sách và mục tiêu đến từng bộ phận và nhà cung cấp.\n→ Triển khai dự án Lean dựa trên mục tiêu chính sách.\n→ Theo dõi KPI: lãng phí, chi phí, hiệu suất, độ tuân thủ.\n→ Cải tiến liên tục dựa trên kết quả triển khai và phản hồi.\n11. Sai lầm phổ biến khi triển khai:\n→ Không truyền đạt mục tiêu và chính sách đến mọi cấp.\n→ KPI không rõ ràng hoặc không theo dõi kết quả.\n→ Không cải tiến liên tục dựa trên phản hồi.\n12. Đối tượng áp dụng:\n→ supply chain manager, operations manager, process improvement manager, logistics coordinator.\n→ phù hợp cho sản xuất, bán lẻ, FMCG, F&B và logistics.\n13. Giới thiệu đơn giản dễ hiểu:\nPolicy Deployment Lean SCM giống như “bản đồ chỉ dẫn cho toàn chuỗi” — đồng bộ mục tiêu, giảm lãng phí và tối ưu hiệu quả vận hành.\n14. Câu hỏi thường gặp (FAQ):\nQ1 → Policy Deployment khác gì triển khai Lean thông thường?\n→ Tập trung đồng bộ mục tiêu, KPI và dự án Lean toàn chuỗi.\nQ2 → KPI quan trọng nhất là gì?\n→ Lãng phí, chi phí, hiệu suất, độ tuân thủ.\nQ3 → Có thể áp dụng cho logistics quốc tế không?\n→ Có, để đồng bộ mục tiêu và KPI toàn cầu.\nQ4 → Bao lâu nên đánh giá hiệu quả?\n→ Hàng quý hoặc khi thay đổi chiến lược.\nQ5 → Ai nên tham gia triển khai?\n→ Planner, quản lý vận hành, process improvement manager, logistics coordinator.\n15. Gợi ý hỗ trợ:\n→ Gửi email: info@fmit.vn\n→ Nhắn tin Zalo: 0708 25 99 25\n© Bản quyền thuộc về Viện FMIT – Từ điển quản trị chuẩn mực quốc tế"
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trinh-mo-phong-ap-luc-quyet-dinh-ton-kho-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trinh-mo-phong-hoach-dinh-nhu-cau-theo-kich-ban-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trinh-mo-phong-kich-ban-khung-hoang-to-chuc-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trinh-mo-phong-kich-ban-tham-hoa-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trinh-mo-phong-quy-trinh-hoach-dinh-nhu-cau-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trinh-quan-ly-chu-ky-cong-tac-du-bao-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trinh-quan-ly-ke-hoach-nhu-cau-cuon-chieu-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trinh-quan-ly-kich-ban-hoach-dinh-nhu-cau-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trinh-tao-bang-dieu-khien-quan-ly-nhu-cau-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trinh-tao-kich-ban-du-bao-du-doan-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trinh-theo-doi-dieu-phoi-tai-khoi-dong-kinh-doanh-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trinh-theo-doi-hanh-vi-xay-dung-niem-tin-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trinh-theo-doi-hieu-qua-kiem-soat-quy-trinh-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trinh-theo-doi-kich-hoat-chien-luoc-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trinh-theo-doi-muc-do-gan-ket-cac-ben-lien-quan-trong-hoach-dinh-kinh-doanh-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trinh-theo-doi-phan-cong-vai-tro-su-co-va-phuc-hoi-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trinh-theo-doi-phan-hoi-ra-soat-ke-hoach-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trinh-theo-doi-phien-ban-sop-van-hanh-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trinh-theo-doi-quy-trinh-giai-quyet-khung-hoang-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trinh-theo-doi-trach-nhiem-van-hanh-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trinh-tu-hoach-dinh-dua-tren-tam-nhin-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trinh-xem-lich-su-cap-nhat-du-bao-la-gi",
+    "h1": "Forecast Update History Viewer là gì",
+    "h2": "Trình xem lịch sử cập nhật dự báo là gì",
+    "content": "1. Định nghĩa:\nForecast Update History Viewer (Trình xem lịch sử cập nhật dự báo) là công cụ trực quan cho phép người dùng theo dõi toàn bộ lịch sử cập nhật forecast, bao gồm thời gian, người thực hiện, nội dung thay đổi, lý do cập nhật và tác động đến kết quả.\n→ Ví dụ: Một công ty bán lẻ sử dụng History Viewer để xem rằng forecast tháng 7 đã được cập nhật 3 lần: lần 1 bởi Sales (+8%), lần 2 bởi Marketing (-3%), lần 3 bởi Finance (+2%).\n2. Mục đích sử dụng:\n→ Minh bạch hóa toàn bộ lịch sử thay đổi forecast\n→ Cho phép kiểm tra nguồn gốc và căn cứ của từng lần cập nhật\n→ Hỗ trợ kiểm toán nội bộ và tăng tính trách nhiệm giải trình\n3. Các bước áp dụng và ví dụ thực tiễn:\n→ Bước 1: Ghi nhận tất cả các bản cập nhật forecast trong hệ thống ERP/BI\n→ Bước 2: Lưu trữ metadata (người cập nhật, thời gian, lý do, dữ liệu tham chiếu)\n→ Bước 3: Xây dựng giao diện trực quan để xem lịch sử thay đổi theo dòng thời gian\n→ Bước 4: Phân tích tần suất và tác động của cập nhật đến accuracy\n→ Ví dụ: Một công ty logistics phát hiện rằng 60% forecast updates đến từ Marketing trong mùa cao điểm.\n4. Lưu ý thực tiễn:\n→ Viewer cần trực quan, dễ tra cứu và có khả năng lọc (theo người, theo phòng ban, theo khoảng thời gian)\n→ Nên kết hợp với audit trail để đảm bảo tính toàn vẹn dữ liệu\n→ Cần xác định rõ quyền truy cập để bảo mật\n5. Ví dụ minh họa:\n→ Cơ bản: Công ty F&B dùng history viewer để kiểm tra forecast nguyên liệu trong mùa Tết đã bị điều chỉnh bao nhiêu lần.\n→ Nâng cao: Ngân hàng toàn cầu tích hợp viewer để phân tích lịch sử dự báo dòng tiền, theo dõi adjustments giữa các chi nhánh.\n6. Case Study Mini:\n→ Tình huống: Một công ty thương mại điện tử bị phàn nàn vì forecast thay đổi quá thường xuyên.\n→ Giải pháp: Áp dụng Forecast Update History Viewer để minh bạch toàn bộ lịch sử cập nhật.\n→ Kết quả: Sau 6 tháng, số lần thay đổi cảm tính giảm 25% và accuracy tăng 9%.\n7. Câu hỏi kiểm tra nhanh (Quick Quiz):\nHistory Viewer trong forecast giúp tổ chức đạt điều gì?\n→ a. Theo dõi minh bạch toàn bộ lịch sử cập nhật dự báo ←\n→ b. Tự động loại bỏ forecast error\n→ c. Quản lý KPI nhân sự\n→ d. Thay thế hoàn toàn hệ thống ERP\n8. Câu hỏi tình huống (Scenario-Based Question):\nMột công ty sản xuất muốn biết phòng ban nào thay đổi forecast nhiều nhất trong quý. Nếu áp dụng History Viewer, họ sẽ phát hiện gì và nên làm gì?\n9. Vì sao bạn nên quan tâm đến khái niệm này:\n→ Forecast chỉ có giá trị nếu được kiểm soát chặt chẽ\n→ History Viewer giúp theo dõi nguồn gốc thay đổi và cải thiện kỷ luật dự báo\n10. Ứng dụng thực tế trong công việc:\n→ Demand Planning: phân tích số lần cập nhật dự báo nhu cầu\n→ Supply Chain: theo dõi cập nhật forecast tồn kho\n→ Finance: kiểm soát forecast ngân sách và cash flow\n→ Risk Management: phân tích rủi ro khi forecast thay đổi quá nhiều\n11. Sai lầm phổ biến khi triển khai:\n→ Chỉ ghi nhận nhưng không phân tích xu hướng thay đổi\n→ Viewer quá phức tạp khiến lãnh đạo khó dùng\n→ Thiếu tính năng audit trail và phân quyền truy cập\n12. Đối tượng áp dụng:\n→ CEO, CFO, Demand Planner, Supply Chain Manager, Risk Manager, Internal Auditor\n→ Các nhóm quản trị dữ liệu và S&OP team\n13. Giới thiệu đơn giản dễ hiểu:\nHistory Viewer giống như “camera tua lại” – cho phép xem lại toàn bộ lịch sử forecast đã được thay đổi thế nào và bởi ai.\n14. Câu hỏi thường gặp:\nQ1 → Viewer khác gì Logging System?\n→ Logging System ghi dữ liệu kỹ thuật, Viewer trực quan hóa để dễ tra cứu.\nQ2 → Có thể tích hợp ERP/BI không?\n→ Có, phổ biến trên Power BI, SAP, Oracle.\nQ3 → Bao lâu nên phân tích lịch sử cập nhật?\n→ Hàng tháng hoặc mỗi chu kỳ forecast.\nQ4 → Có thể dùng để đo KPI phòng ban không?\n→ Có, để đánh giá ai thay đổi forecast nhiều nhất và mức độ hợp lý.\nQ5 → Có áp dụng cho forecast phi tài chính không?\n→ Có, ví dụ: dự báo nhân sự, logistics, y tế.\n15. Thuật ngữ liên quan:\nForecast Update: Cập nhật dự báo\nHistory Viewer: Trình xem lịch sử\nAudit Trail: Nhật ký kiểm toán\nForecast Governance: Quản trị dự báo\nForecast Adjustment: Điều chỉnh dự báo\n16. Gợi ý hỗ trợ:\n→ Liên hệ email: info@fmit.vn\n→ Nhắn tin Zalo: 0708 25 99 25\n© Bản quyền thuộc về Viện FMIT – Từ điển quản trị chuẩn mực quốc tế"
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tro-ly-ai-trong-ra-soat-nhu-cau-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tro-ly-ao-cho-nha-cung-cap-la-gi",
+    "h1": "Chatbots for suppliers là gì",
+    "h2": "Trợ lý ảo cho nhà cung cấp là gì",
+    "content": "1. Định nghĩa:\nTrợ lý ảo cho nhà cung cấp (Chatbots for Suppliers) là các công cụ trí tuệ nhân tạo (AI) được tích hợp vào hệ thống quản lý nhà cung cấp (SRM) hoặc cổng thông tin điện tử, giúp tự động trả lời câu hỏi, xử lý yêu cầu và hướng dẫn NCC thực hiện các tác vụ thông thường mà không cần sự can thiệp trực tiếp của nhân viên.\n→ Ví dụ: Một chatbot trong portal có thể hướng dẫn NCC cách tải hóa đơn, kiểm tra tình trạng thanh toán, hoặc cập nhật hồ sơ chỉ bằng tin nhắn tự động.\n2. Mục đích sử dụng:\n→ Giảm tải cho bộ phận hỗ trợ NCC (helpdesk).\n→ Tăng tốc độ phản hồi và hỗ trợ NCC 24/7.\n→ Chuẩn hóa quy trình giao tiếp, đảm bảo thông tin thống nhất.\n3. Các bước áp dụng và ví dụ thực tiễn:\nBối cảnh: Một công ty công nghiệp muốn số hóa quy trình tương tác với NCC.\n→ Bước 1: Xác định các loại câu hỏi phổ biến từ NCC.\n→ Bước 2: Thiết lập kịch bản hội thoại (chat flow) tự động.\n→ Bước 3: Tích hợp chatbot vào portal hoặc ứng dụng SRM.\n→ Bước 4: Huấn luyện chatbot bằng dữ liệu thật và kiểm thử.\n→ Bước 5: Theo dõi hiệu quả, cải tiến kịch bản định kỳ.\n4. Lưu ý thực tiễn:\n→ Nên có tùy chọn “chuyển sang nhân viên thật” khi chatbot không xử lý được.\n→ Đảm bảo chatbot hiểu được nhiều ngôn ngữ nếu NCC quốc tế.\n→ Bảo mật dữ liệu trò chuyện, tránh rò rỉ thông tin nhạy cảm.\n5. Ví dụ minh họa:\n→ Cơ bản: Chatbot trả lời câu hỏi “Khi nào tôi được thanh toán?”.\n→ Nâng cao: Microsoft triển khai chatbot AI giúp NCC truy xuất hợp đồng, gửi yêu cầu bảo trì và cập nhật chứng từ tự động.\n6. Case Study Mini:\n→ Tình huống: Helpdesk bị quá tải với 2.000 email hỏi về thanh toán mỗi tháng.\n→ Giải pháp: Doanh nghiệp triển khai chatbot thông minh cho NCC.\n→ Kết quả: Giảm 70% khối lượng email và tăng 50% điểm hài lòng NCC.\n7. Câu hỏi kiểm tra nhanh (Quick Quiz):\nChatbots for Suppliers giúp đạt điều gì?\n→ a. Tăng tốc độ phản hồi và hỗ trợ 24/7 ←\n→ b. Giảm khả năng tương tác với NCC\n→ c. Làm phức tạp quy trình hỗ trợ\n→ d. Tăng chi phí nhân sự hỗ trợ\n8. Câu hỏi tình huống (Scenario-Based Question):\nNếu chatbot thường xuyên trả lời sai hoặc không hiểu câu hỏi của NCC, bạn nên cải thiện hệ thống thế nào để đảm bảo độ chính xác và trải nghiệm người dùng?\n9. Vì sao bạn nên quan tâm đến khái niệm này:\n→ Là một phần của Automation trong Supplier Relationship Management.\n→ Giúp tăng tốc quy trình, giảm lỗi con người, và tối ưu nguồn lực.\n→ Tạo trải nghiệm hiện đại, thân thiện và chuyên nghiệp cho NCC.\n10. Ứng dụng thực tế trong công việc:\n→ Bộ phận mua hàng: chatbot trả lời câu hỏi quy trình đấu thầu, đăng ký NCC.\n→ Bộ phận kế toán: chatbot cung cấp thông tin thanh toán, hóa đơn.\n→ Bộ phận kỹ thuật: chatbot hướng dẫn đăng nhập, tải tài liệu, khắc phục lỗi.\n→ Bộ phận pháp chế: chatbot trả lời quy định, điều khoản hợp đồng.\n11. Sai lầm phổ biến khi triển khai:\n→ Thiết lập kịch bản không đầy đủ, chatbot trả lời sai.\n→ Không tích hợp chatbot với dữ liệu thực từ SRM.\n→ Thiếu kế hoạch cập nhật và đào tạo AI liên tục.\n12. Đối tượng áp dụng:\n→ Supplier Enablement Lead, AI System Manager, Procurement Digitalization Officer.\n→ Áp dụng trong: sản xuất, công nghệ, thương mại, logistics, dịch vụ công.\n13. Giới thiệu đơn giản dễ hiểu:\nChatbot cho nhà cung cấp giống như “trợ lý ảo” – luôn sẵn sàng hỗ trợ NCC mọi lúc, giúp họ hoàn tất công việc nhanh hơn mà không cần chờ phản hồi thủ công.\n14. Câu hỏi thường gặp (FAQ):\nQ1 → Chatbot có thể thay thế helpdesk hoàn toàn không?\n→ Không, chỉ xử lý phần tự động; các yêu cầu phức tạp vẫn cần con người.\nQ2 → Có thể dùng chatbot trên Zalo hoặc WhatsApp không?\n→ Có, nếu tích hợp được API của doanh nghiệp.\nQ3 → Chatbot cần học từ dữ liệu nào?\n→ Dữ liệu câu hỏi – trả lời phổ biến, quy trình và chính sách nội bộ.\nQ4 → Có thể đo hiệu quả chatbot không?\n→ Có, dựa trên tỷ lệ trả lời đúng và mức độ hài lòng NCC.\nQ5 → Chatbot có cần cập nhật thường xuyên không?\n→ Có, ít nhất hàng quý để cải thiện độ chính xác và khả năng hiểu ngữ cảnh.\n15. Gợi ý hỗ trợ:\n→ Gửi email: info@fmit.vn\n→ Nhắn tin Zalo: 0708 25 99 25\n© Bản quyền thuộc về Viện FMIT – Từ điển quản trị chuẩn mực quốc tế"
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/tro-ly-hoach-dinh-nhu-cau-bang-tri-tue-nhan-tao-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/trong-so-tin-hieu-dinh-tinh-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/truc-quan-hoa-ban-do-cau-chuyen-du-bao-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
+  },
+  {
+    "url": "https://fmit.vn/en/glossary/truc-quan-hoa-boi-canh-kpi-la-gi",
+    "h1": "",
+    "h2": "",
+    "content": ""
   }
 ]
