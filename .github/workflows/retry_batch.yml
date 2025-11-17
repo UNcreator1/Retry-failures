@@ -20,10 +20,16 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 330  # 5.5 hours (safety buffer)
     
+    # Grant write permissions for pushing results
+    permissions:
+      contents: write
+      actions: write
+    
     steps:
       - name: 📥 Checkout Repository
         uses: actions/checkout@v4
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 1
       
       - name: 🐍 Setup Python 3.10
